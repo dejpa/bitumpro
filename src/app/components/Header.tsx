@@ -21,33 +21,33 @@ export default function Header() {
     // تغییر زبان
     const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const newLocale = event.target.value;
-
+        const pathSegments = pathname.split("/").filter(Boolean); // حذف `/` اضافه
+    
         let newPathname;
-        if (newLocale === "en") {
-            // اگر مسیر شامل زبان بود، فقط زبان رو حذف کن، بقیه مسیر بمونه
-            newPathname = `/${pathSegments.slice(2).join("/")}` || "/";
+    
+        if (locales.includes(pathSegments[0])) {
+            // اگر مسیر دارای زبان است، جایگزین زبان فعلی با زبان جدید
+            newPathname = `/${newLocale}/${pathSegments.slice(1).join("/")}`;
         } else {
-            // اگر مسیر زبان نداره، اضافه کن
-            if (locales.includes(pathSegments[1])) {
-                newPathname = `/${newLocale}/${pathSegments.slice(2).join("/")}`;
-            } else {
-                newPathname = `/${newLocale}${pathname}`;
-            }
+            // اگر مسیر بدون زبان است، زبان جدید را اضافه کن
+            newPathname = `/${newLocale}${pathname}`;
         }
-
+    
         startTransition(() => {
             router.push(newPathname);
         });
     };
+     
 
     const navLinks = [
-        { href: "/", label: t("home") },
-        { href: "/about-us", label: t("about") },
-        { href: "/applications", label: t("applications") },
-        { href: "/environmental-impact", label: t("environmentalImpact") },
-        { href: "/case-studies", label: t("caseStudies") },
-        { href: "/contact", label: t("contact") }
+        { href: `/${currentLocale}`, label: t("header.home") },
+        { href: `/${currentLocale}/about-us`, label: t("header.about") },
+        { href: `/${currentLocale}/applications`, label: t("header.applications") },
+        { href: `/${currentLocale}/environmental-impact`, label: t("header.environmentalImpact") },
+        { href: `/${currentLocale}/case-studies`, label: t("header.caseStudies") },
+        { href: `/${currentLocale}/contact`, label: t("header.contact") }
     ];
+    
 
     return (
         <header className="w-full bg-gray-900 text-white p-4 flex justify-between items-center drop-shadow-md fixed z-50">
@@ -71,7 +71,7 @@ export default function Header() {
             <div className="hidden lg:flex items-center space-x-4">
                 <Link href="/request-consultation">
                     <button className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg hover:bg-yellow-500 transition duration-300">
-                        {t("requestConsultation")}
+                        {t("header.requestConsultation")}
                     </button>
                 </Link>
                 <div>
