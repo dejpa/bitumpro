@@ -53,7 +53,7 @@ export default function Header() {
         <header className="w-full bg-gray-900 text-white p-4 flex justify-between items-center drop-shadow-md fixed z-50">
             {/* لوگو */}
             <div className="flex items-center">
-                <Link href="/">
+                <Link href={`/${currentLocale}`}>
                     <img src="/logo.png" alt="Company Logo" className="w-32 h-auto mx-auto" />
                 </Link>
             </div>
