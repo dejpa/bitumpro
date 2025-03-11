@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { FaLeaf, FaCheckCircle, FaShieldAlt, FaTruck, FaGlobe, FaBoxOpen } from "react-icons/fa";
+import { FaLeaf, FaCheckCircle, FaShieldAlt, FaTruck, FaGlobe, FaBoxOpen, FaArrowRight } from "react-icons/fa";
 import { getTranslator } from "@/i18n";
 
 import Link from "next/link";
@@ -86,8 +86,25 @@ export default function Home() {
             <div className="p-6 bg-gray-700 rounded-lg shadow-md">
               <FaShieldAlt className="text-yellow-400 h-12 w-12 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2 text-yellow-400">{t("home.ourValues")}</h3>
-              <p className="text-gray-300">
-                {t("home.ourValuesDescription")}
+              <ul className="text-gray-300">
+                <li>
+                  <h4>{t("home.ourValuesInnovation")}</h4>
+                  <p>{t("home.ourValuesInnovationDescription")}</p>
+                </li>
+                <li>
+                  <h4>{t("home.ourValuesSustainability")}</h4>
+                  <p>{t("home.ourValuesSustainabilityDescription")}</p>
+                </li>
+                <li>
+                  <h4>{t("home.ourValuesExcellence")}</h4>
+                  <p>{t("home.ourValuesExcellenceDescription")}</p>
+                </li>
+                <li>
+                  <h4>{t("home.ourValuesIntegrity")}</h4>
+                  <p>{t("home.ourValuesIntegrityDescription")}</p>
+                </li>
+              </ul>
+              <p >
               </p>
             </div>
           </div>
@@ -125,13 +142,17 @@ export default function Home() {
             {/* Product 3: International Distribution */}
             <div className="p-6 bg-gray-800 rounded-lg shadow-md">
               <FaGlobe className="text-yellow-400 h-12 w-12 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-yellow-400">{t("home.internationalDistribution")}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-yellow-400">{t("home.globalDistribution")}</h3>
               <p className="text-gray-300">
-                {t("home.internationalDistributionDescription")}
+                {t("home.globalDistributionDescription")}
               </p>
             </div>
           </div>
         </div>
+        <Link className="flex justify-center items-center mt-8 underline text-yellow-400 hover:text-gray-300 transition duration-300" href={`/${currentLocale}/products`}>
+          {t("home.exploreProducts")}
+          <FaArrowRight className="ml-2" />
+        </Link>
       </section>
 
       {/* Contact Information Section */}
@@ -179,7 +200,7 @@ export default function Home() {
             {t("home.readyToRestore")}
           </h2>
           <p className="text-xl mb-8 text-gray-300">
-            {t("home.readyToRestore")}
+            {t("home.readyToRestoreDescription")}
           </p>
           <a
             href="/contact"

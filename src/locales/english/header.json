@@ -1,9 +1,10 @@
 {
     "home": "Home",
     "about": "About",
-    "applications": "Applications",
-    "environmentalImpact": "Environmental Impact",
-    "caseStudies": "Case Studies",
+    "products": "Products",
+    "sustainability": "Sustainability",
+    "career": "Career",
+    "media": "Media",
     "contact": "Contact",
     "requestConsultation": "Request Consultation"
 }

@@ -42,9 +42,10 @@ export default function Header() {
     const navLinks = [
         { href: `/${currentLocale}`, label: t("header.home") },
         { href: `/${currentLocale}/about-us`, label: t("header.about") },
-        { href: `/${currentLocale}/applications`, label: t("header.applications") },
-        { href: `/${currentLocale}/environmental-impact`, label: t("header.environmentalImpact") },
-        { href: `/${currentLocale}/case-studies`, label: t("header.caseStudies") },
+        { href: `/${currentLocale}/products`, label: t("header.products") },
+        { href: `/${currentLocale}/sustainability`, label: t("header.sustainability") },
+        { href: `/${currentLocale}/career`, label: t("header.career") },
+        { href: `/${currentLocale}/media`, label: t("header.media") },
         { href: `/${currentLocale}/contact`, label: t("header.contact") }
     ];
     
@@ -118,7 +119,7 @@ export default function Header() {
                                 onClick={() => setIsMenuOpen(false)}
                                 className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg hover:bg-yellow-500 transition duration-300 w-full"
                             >
-                                {t("requestConsultation")}
+                                {t("header.requestConsultation")}
                             </button>
                         </Link>
                     </div>
