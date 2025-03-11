@@ -87,20 +87,20 @@ export default function Home() {
               <FaShieldAlt className="text-yellow-400 h-12 w-12 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2 text-yellow-400">{t("home.ourValues")}</h3>
               <ul className="text-gray-300">
-                <li>
-                  <h4>{t("home.ourValuesInnovation")}</h4>
+                <li className="mb-2">
+                  <h4 className="font-bold">{t("home.ourValuesInnovation")}:</h4>
                   <p>{t("home.ourValuesInnovationDescription")}</p>
                 </li>
-                <li>
-                  <h4>{t("home.ourValuesSustainability")}</h4>
+                <li className="mb-2">
+                  <h4 className="font-bold">{t("home.ourValuesSustainability")}:</h4>
                   <p>{t("home.ourValuesSustainabilityDescription")}</p>
                 </li>
-                <li>
-                  <h4>{t("home.ourValuesExcellence")}</h4>
+                <li className="mb-2">
+                  <h4 className="font-bold">{t("home.ourValuesExcellence")}:</h4>
                   <p>{t("home.ourValuesExcellenceDescription")}</p>
                 </li>
-                <li>
-                  <h4>{t("home.ourValuesIntegrity")}</h4>
+                <li className="mb-2">
+                  <h4 className="font-bold">{t("home.ourValuesIntegrity")}:</h4>
                   <p>{t("home.ourValuesIntegrityDescription")}</p>
                 </li>
               </ul>
