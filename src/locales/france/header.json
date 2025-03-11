@@ -1,9 +1,10 @@
 {
     "home": "Accueil",
     "about": "À propos",
-    "applications": "Applications",
-    "environmentalImpact": "Impact Environnemental",
-    "caseStudies": "Études de cas",
+    "products": "Produits",
+    "sustainability": "Durabilité",
+    "career": "Carrière",
+    "media": "Médias",
     "contact": "Contact",
     "requestConsultation": "Demander Une Consultation"
 }
