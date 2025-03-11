@@ -55,7 +55,7 @@ export default function Header() {
             {/* لوگو */}
             <div className="flex items-center">
                 <Link href={`/${currentLocale}`}>
-                    <img src="/logo.png" alt="Company Logo" className="w-32 h-auto mx-auto" />
+                    <img src="/logo.png" alt="Company Logo" className="w-24 lg:w-32 h-auto mx-auto" />
                 </Link>
             </div>
 
