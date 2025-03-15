@@ -71,7 +71,7 @@ export default function AboutUs() {
         </div>
 
         {/* Financials */}
-        <div className="p-6 bg-gray-800 rounded-lg shadow-md">
+        {/* <div className="p-6 bg-gray-800 rounded-lg shadow-md">
           <FaChartLine className="text-yellow-400 h-12 w-12 mx-auto mb-4" />
           <h3 className="text-xl font-semibold mb-2 text-yellow-400">
             <Link className="flex justify-center items-center" href={`/${currentLocale}/contact`}>
@@ -80,7 +80,7 @@ export default function AboutUs() {
             </Link>
           </h3>
           <p className="text-gray-300">{t("aboutUs.financialsDescription")}</p>
-        </div>
+        </div> */}
 
         {/* History */}
         <div className="p-6 bg-gray-800 rounded-lg shadow-md">
