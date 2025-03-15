@@ -164,31 +164,20 @@ export default function Home() {
           <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
             {t("home.contactUsDescription")}
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid ">
             <div className="p-6 bg-gray-700 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2 text-yellow-400">{t("home.dubaiOffice")}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-yellow-400">{t("home.canadaOffice")}</h3>
               <p className="text-gray-300">
                 {t("home.canadaOfficeAddress")}
               </p>
               <p className="text-gray-300">
-                {t("home.phone")}: +1 (416) 123-4567
+                {t("home.phone")}: +1 (778) 877-1052
               </p>
               <p className="text-gray-300">
                 {t("home.email")}: info@company.com
               </p>
             </div>
-            <div className="p-6 bg-gray-700 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2 text-yellow-400">{t("home.dubaiOfficeAddress")}</h3>
-              <p className="text-gray-300">
-                {t("home.canadaOfficeAddress")}
-              </p>
-              <p className="text-gray-300">
-                {t("home.phone")}: +971 4 123 4567
-              </p>
-              <p className="text-gray-300">
-                {t("home.email")}: dubai@company.com
-              </p>
-            </div>
+           
           </div>
         </div>
       </section>

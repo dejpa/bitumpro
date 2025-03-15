@@ -7,9 +7,9 @@ export default function Footer() {
                 {/* بخش تماس با ما */}
                 <div className="w-full md:w-1/3 mb-8 md:mb-0">
                     <h3 className="text-md md:text-lg font-bold text-yellow-400">Contact Us</h3>
-                    <p className="text-gray-300">Address: 123 Green St, Eco City</p>
-                    <p className="text-gray-300">Phone: +123 456 7890</p>
-                    <p className="text-gray-300">Email: info@biomulch.com</p>
+                    <p className="text-gray-300">Address: 1470 Camelot RD, West Vancouver, BC, Canada</p>
+                    <p className="text-gray-300">Phone:  +1 (778) 877-1052</p>
+                    <p className="text-gray-300">Email:  info@company.com</p>
                 </div>
 
                 {/* بخش لینک‌های سریع */}
