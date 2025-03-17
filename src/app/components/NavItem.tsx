@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { NavLink } from "@/app/constants/navLinks";
-import  SubMenu  from "@/app/components/SubMenu"
+import  SubMenu  from "@/app/components/SubMenu";
+import { useEffect, useRef } from "react";
+
 
 interface NavItemProps {
     link: NavLink;
@@ -12,9 +14,22 @@ interface NavItemProps {
 
 const NavItem: React.FC<NavItemProps> = ({ link, openDropdown, setOpenDropdown, isMobile = false }) => {
     const isOpen = openDropdown === link.href;
+    const menuRef = useRef<HTMLDivElement | null>(null);
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+                setOpenDropdown(null);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [setOpenDropdown]);
 
     return (
-        <div className={` ${isMobile ? "w-full" : ""}`}>
+        <div ref={menuRef}  className={` ${isMobile ? "w-full" : ""}`}>
             <button
                 onClick={() => setOpenDropdown(isOpen ? null : link.href)}
                 className={`flex items-center justify-between w-full font-medium text-white hover:text-yellow-400 transition ${
@@ -29,7 +44,12 @@ const NavItem: React.FC<NavItemProps> = ({ link, openDropdown, setOpenDropdown, 
                     <div className={`max-w-[1200px] mx-auto p-6 ${isMobile ? "p-2" : ""}`}>
                         <div className="grid grid-cols-3 gap-6">
                             {link.subLinks.map((subLink, index) => (
-                                <SubMenu key={index} subLink={subLink} isMobile={isMobile} />
+                                <SubMenu 
+                                    key={index} 
+                                    subLink={subLink} 
+                                    isMobile={isMobile} 
+                                    closeMenu={() => setOpenDropdown(null)}
+                                />
                             ))}
                         </div>
                     </div>

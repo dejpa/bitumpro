@@ -4,9 +4,10 @@ import { NavLink } from "@/app/constants/navLinks";
 interface SubMenuProps {
     subLink: NavLink;
     isMobile?: boolean;
+    closeMenu: () => void;
 }
 
-const SubMenu: React.FC<SubMenuProps> = ({ subLink, isMobile = false }) => {
+const SubMenu: React.FC<SubMenuProps> = ({ subLink, isMobile = false ,closeMenu}) => {
     return (
         <div className="flex flex-col">
             {subLink.subLinks ? (
@@ -20,6 +21,7 @@ const SubMenu: React.FC<SubMenuProps> = ({ subLink, isMobile = false }) => {
                                 key={nestedIndex}
                                 href={nestedSubLink.href}
                                 className="text-gray-300 hover:underline transition py-1 flex"
+                                onClick={closeMenu}
                             >
                                 {nestedSubLink.label}
                             </Link>
@@ -27,7 +29,11 @@ const SubMenu: React.FC<SubMenuProps> = ({ subLink, isMobile = false }) => {
                     </div>
                 </>
             ) : (
-                <Link href={subLink.href} className="font-semibold text-yellow-400 hover:underline transition py-1">
+                <Link 
+                    href={subLink.href} 
+                    className="font-semibold text-yellow-400 hover:underline transition py-1"
+                    onClick={closeMenu}
+                >
                     {subLink.label}
                 </Link>
             )}
