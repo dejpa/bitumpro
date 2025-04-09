@@ -30,14 +30,15 @@ const NavItem: React.FC<NavItemProps> = ({ link, openDropdown, setOpenDropdown, 
 
     return (
         <div ref={menuRef}  className={` ${isMobile ? "w-full" : ""}`}>
-            <button
+            <Link
+                href={link.href}
                 onClick={() => setOpenDropdown(isOpen ? null : link.href)}
                 className={`flex items-center justify-between w-full font-medium text-white hover:text-yellow-400 transition ${
                     isMobile ? "py-2 px-4" : ""
                 }`}
             >
                 {link.label} {link.subLinks && <ChevronDownIcon className="w-4 h-4 ml-1" />}
-            </button>
+            </Link>
 
             {link.subLinks && isOpen && (
                 <div className={`bg-gray-800 shadow-lg transition-all duration-300 z-50 rounded-lg ${isMobile ? "pl-6" : "absolute left-0 top-full w-full"}`}>

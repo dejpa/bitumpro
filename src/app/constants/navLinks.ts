@@ -5,7 +5,6 @@ export type NavLink = {
 };
 
 
-
 export const getNavLinks = (t: (key: string) => string, currentLocale: string) => [
     { href: `/${currentLocale}`, label: t("header.home") },
     {
@@ -42,7 +41,22 @@ export const getNavLinks = (t: (key: string) => string, currentLocale: string) =
         ]
     },
     { href: `/${currentLocale}/products`, label: t("header.products") },
-    { href: `/${currentLocale}/sustainability`, label: t("header.sustainability") },
+    {
+        href: `/${currentLocale}/sustainability`,
+        label: t("header.sustainability"),
+        subLinks: [
+            { href: `/${currentLocale}/sustainability`, label: t("header.sustainability") },
+            {
+                href: `/${currentLocale}/sustainability/guidingPrinciples`,
+                label: t("header.guidingPrinciples"),
+                subLinks: [
+                    { href: `/${currentLocale}/sustainability/guidingPrinciples/Sustainable-development-policy`, label: t("header.SustainableDevelopmentPolicy") },
+                    { href: `/${currentLocale}/sustainability/guidingPrinciples/HSE`, label: t("header.HSE") },
+                ]
+            },
+            { href: `/${currentLocale}/sustainability/sustainableProducts`, label: t("header.SustainableDevelopmentPolicy") },
+        ]
+    },
     { href: `/${currentLocale}/career`, label: t("header.career") },
     { href: `/${currentLocale}/contact`, label: t("header.contact") }
 ];
