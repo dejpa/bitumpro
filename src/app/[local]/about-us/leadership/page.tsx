@@ -1,0 +1,279 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+import { FaUser, FaGraduationCap, FaGlobe, FaTrophy, FaBuilding, FaArrowRight, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { getTranslator } from "@/i18n";
+import Link from "next/link";
+
+const locales = ["en", "fr"];
+
+export default function ExecutiveTeam() {
+  const pathname = usePathname();
+  const pathSegments = pathname.split("/");
+  const currentLocale = locales.includes(pathSegments[1]) ? pathSegments[1] : "en";
+  const t = getTranslator(currentLocale);
+
+  const leadershipTeam = [
+    {
+      name: "Vahid Sheikhi",
+      position: "Chief Executive Officer",
+      positionFr: "Directeur Général",
+      image: "/vahid-sheikhi.jpeg",
+      bio: "With over 20 years of experience in the bitumen and asphalt industry, Vahid Sheikhi leads BitumAsphalt with a vision of sustainable infrastructure development. He holds an MBA in Entrepreneurship from Tehran University and has been an active member of the Iranian Oil, Gas and Petrochemical Products Exporters' Union since 2011.",
+      bioFr: "Avec plus de 20 ans d'expérience dans l'industrie du bitume et de l'asphalte, Vahid Sheikhi dirige BitumAsphalt avec une vision de développement d'infrastructure durable. Il détient un MBA en Entrepreneuriat de l'Université de Téhéran et est membre actif de l'Union des Exportateurs de Produits Pétroliers, Gaziers et Pétrochimiques d'Iran depuis 2011.",
+      achievements: [
+        "Active union member since 2010 and board member of the 8th term",
+        "CEO of Dejpa Industrial Bitumen and Asphalt Company since 2001",
+        "50 years of transparent family history in petroleum products",
+        "Export experience to over 33 countries"
+      ],
+      achievementsFr: [
+        "Membre actif de l'union depuis 2010 et membre du conseil d'administration du 8ème mandat",
+        "PDG de la Société de Bitume Industriel et d'Asphalte Dejpa depuis 2001",
+        "50 ans d'historique familial transparent dans les produits pétroliers",
+        "Expérience d'exportation vers plus de 33 pays"
+      ],
+      education: "MBA in Entrepreneurship, Tehran University",
+      educationFr: "MBA en Entrepreneuriat, Université de Téhéran",
+      experience: "20+ years in bitumen industry",
+      experienceFr: "20+ ans dans l'industrie du bitume"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-900 text-white" suppressHydrationWarning>
+      {/* Hero Section */}
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+          style={{ backgroundImage: "url('/leadership-cover.webp')" }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80"></div>
+        </div>
+        
+        {/* Floating elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 left-10 w-20 h-20 bg-primary-500/20 rounded-full blur-xl floating"></div>
+          <div className="absolute top-40 right-20 w-32 h-32 bg-accent-500/20 rounded-full blur-xl floating [animation-delay:2s]"></div>
+          <div className="absolute bottom-40 left-20 w-16 h-16 bg-primary-400/30 rounded-full blur-lg floating [animation-delay:4s]"></div>
+        </div>
+        
+        <div className="container mx-auto text-center relative z-10 px-6">
+          <div className="animate-fade-in">
+            <h1 className="text-6xl lg:text-8xl font-bold mb-6 gradient-text text-shadow-lg leading-tight">
+              {t("leadership.heroTitle")}
+            </h1>
+            <p className="text-xl lg:text-2xl mb-12 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+              {t("leadership.heroDescription")}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Link
+                href={`/${currentLocale}/contact`}
+                className="glass-button px-8 py-4 text-lg font-semibold text-white rounded-2xl hover:shadow-glow transition-all duration-300 hover-cursor-expand group"
+              >
+                <span className="flex items-center gap-3">
+                  {t("leadership.meetOurTeam")}
+                  <FaArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Team */}
+      <section className="py-24 bg-gray-900">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-6xl font-bold mb-6 gradient-text">
+              {t("leadership.executiveTeam")}
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              {t("leadership.executiveTeamDescription")}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 max-w-4xl mx-auto">
+            {leadershipTeam.map((leader, index) => (
+              <div key={index} className="glass-card p-8 hover-lift group animate-slide-up">
+                <div className="flex flex-col lg:flex-row gap-8 items-center">
+                  {/* Profile Image */}
+                  <div className="flex-shrink-0">
+                    <div className="w-48 h-48 rounded-full bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-2 group-hover:scale-105 transition-transform duration-300">
+                      <div className="w-full h-full rounded-full overflow-hidden">
+                        <img 
+                          src={leader.image} 
+                          alt={leader.name}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            // Fallback to icon if image fails to load
+                            e.currentTarget.style.display = 'none';
+                            e.currentTarget.nextElementSibling.style.display = 'flex';
+                          }}
+                        />
+                        <div className="w-full h-full bg-gray-800 flex items-center justify-center" style={{display: 'none'}}>
+                          <FaUser className="w-24 h-24 text-primary-400" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Profile Content */}
+                  <div className="flex-1 text-center lg:text-left">
+                    <h3 className="text-3xl font-bold gradient-text mb-2">
+                      {leader.name}
+                    </h3>
+                    <p className="text-xl text-accent-400 mb-6">
+                      {currentLocale === 'fr' ? leader.positionFr : leader.position}
+                    </p>
+                    
+                    <p className="text-gray-300 leading-relaxed mb-6">
+                      {currentLocale === 'fr' ? leader.bioFr : leader.bio}
+                    </p>
+                    
+                    {/* Education & Experience */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                      <div className="flex items-center gap-3">
+                        <FaGraduationCap className="text-primary-400 w-5 h-5" />
+                        <span className="text-gray-300">
+                          {currentLocale === 'fr' ? leader.educationFr : leader.education}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <FaBuilding className="text-accent-400 w-5 h-5" />
+                        <span className="text-gray-300">
+                          {currentLocale === 'fr' ? leader.experienceFr : leader.experience}
+                        </span>
+                      </div>
+                    </div>
+                    
+                    {/* Achievements */}
+                    <div className="mb-6">
+                      <h4 className="text-lg font-bold text-primary-400 mb-3 flex items-center gap-2">
+                        <FaTrophy className="w-5 h-5" />
+                        {t("leadership.keyAchievements")}
+                      </h4>
+                      <ul className="space-y-2">
+                        {(currentLocale === 'fr' ? leader.achievementsFr : leader.achievements).map((achievement, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <div className="w-2 h-2 bg-accent-400 rounded-full mt-2 flex-shrink-0"></div>
+                            <span className="text-gray-300 text-sm">{achievement}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    {/* Contact Links */}
+                    <div className="flex gap-4 justify-center lg:justify-start">
+                      <button className="glass-button px-4 py-2 text-sm rounded-lg hover:shadow-glow transition-all duration-300 hover-cursor-expand">
+                        <FaEnvelope className="w-4 h-4" />
+                      </button>
+                      <button className="glass-button px-4 py-2 text-sm rounded-lg hover:shadow-glow transition-all duration-300 hover-cursor-expand">
+                        <FaLinkedin className="w-4 h-4" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Values */}
+      <section className="py-24 bg-gray-800">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-6xl font-bold mb-6 gradient-text">
+              {t("leadership.leadershipValues")}
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              {t("leadership.leadershipValuesDescription")}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="glass-card p-6 hover-lift group animate-scale-in text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500/20 to-primary-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <FaGlobe className="text-primary-400 h-8 w-8" />
+              </div>
+              <h3 className="text-xl font-bold gradient-text mb-3">
+                {t("leadership.globalVision")}
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {t("leadership.globalVisionDescription")}
+              </p>
+            </div>
+
+            <div className="glass-card p-6 hover-lift group animate-scale-in [animation-delay:0.2s] text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent-500/20 to-accent-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <FaBuilding className="text-accent-400 h-8 w-8" />
+              </div>
+              <h3 className="text-xl font-bold gradient-text mb-3">
+                {t("leadership.industryExpertise")}
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {t("leadership.industryExpertiseDescription")}
+              </p>
+            </div>
+
+            <div className="glass-card p-6 hover-lift group animate-scale-in [animation-delay:0.4s] text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <FaUser className="text-primary-400 h-8 w-8" />
+              </div>
+              <h3 className="text-xl font-bold gradient-text mb-3">
+                {t("leadership.ethicalLeadership")}
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {t("leadership.ethicalLeadershipDescription")}
+              </p>
+            </div>
+
+            <div className="glass-card p-6 hover-lift group animate-scale-in [animation-delay:0.6s] text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent-500/20 to-accent-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <FaTrophy className="text-accent-400 h-8 w-8" />
+              </div>
+              <h3 className="text-xl font-bold gradient-text mb-3">
+                {t("leadership.innovation")}
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {t("leadership.innovationDescription")}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-24 bg-gray-900">
+        <div className="container mx-auto px-6 text-center">
+          <div className="glass-card p-12 hover-lift animate-slide-up">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 gradient-text text-shadow-lg">
+              {t("leadership.joinOurVision")}
+            </h2>
+            <p className="text-xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              {t("leadership.joinOurVisionDescription")}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Link
+                href={`/${currentLocale}/contact`}
+                className="glass-button px-8 py-4 text-lg font-semibold text-white rounded-2xl hover:shadow-glow transition-all duration-300 hover-cursor-expand group"
+              >
+                <span className="flex items-center gap-3">
+                  {t("leadership.contactLeadership")}
+                  <FaArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </span>
+              </Link>
+              <Link
+                href={`/${currentLocale}/about-us`}
+                className="glass bg-white/10 border border-white/20 text-white px-8 py-4 text-lg font-semibold rounded-2xl hover:bg-white/20 hover:border-white/30 transition-all duration-300 hover-cursor-glow"
+              >
+                {t("leadership.learnMoreAboutUs")}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

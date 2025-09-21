@@ -12,14 +12,15 @@ export const getNavLinks = (t: (key: string) => string, currentLocale: string) =
         subLinks: [
             { href: `/${currentLocale}/about-us`, label: t("header.aboutUs") },
             { href: `/${currentLocale}/about-us/our-vision`, label: t("header.ourVision") },
-            {
-                label: t("header.leadership"),
-                subLinks: [
-                    { href: `/${currentLocale}/about-us/leadership/executive-team`, label: t("header.executiveTeam") },
-                    { href: `/${currentLocale}/about-us/leadership/board-of-directors`, label: t("header.boardOfDirectors") },
-                    { href: `/${currentLocale}/about-us/leadership/management-team`, label: t("header.groupManagement") }
-                ]
-            },
+            { href: `/${currentLocale}/about-us/leadership`, label: t("header.leadership") },
+            // {
+            //     label: t("header.leadership"),
+            //     subLinks: [
+            //         { href: `/${currentLocale}/about-us/leadership/executive-team`, label: t("header.executiveTeam") },
+            //         { href: `/${currentLocale}/about-us/leadership/board-of-directors`, label: t("header.boardOfDirectors") },
+            //         { href: `/${currentLocale}/about-us/leadership/management-team`, label: t("header.groupManagement") }
+            //     ]
+            // },
             // {
             //     label: t("header.ourBusiness"),
             //     subLinks: [
