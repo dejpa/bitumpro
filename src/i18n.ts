@@ -13,6 +13,8 @@ import commitment_en from "@/locales/english/commitment.json";
 import privacy_en from "@/locales/english/privacy.json";
 import terms_en from "@/locales/english/terms.json";
 import cookies_en from "@/locales/english/cookies.json";
+import ecoFriendly_en from "@/locales/english/ecoFriendly.json";
+import greenTech_en from "@/locales/english/greenTech.json";
 
 import home_fr from "@/locales/france/home.json";
 import header_fr from "@/locales/france/header.json";
@@ -27,6 +29,8 @@ import commitment_fr from "@/locales/france/commitment.json";
 import privacy_fr from "@/locales/france/privacy.json";
 import terms_fr from "@/locales/france/terms.json";
 import cookies_fr from "@/locales/france/cookies.json";
+import ecoFriendly_fr from "@/locales/france/ecoFriendly.json";
+import greenTech_fr from "@/locales/france/greenTech.json";
 
 // تعریف زبان پیش‌فرض
 const DEFAULT_LOCALE = "en";
@@ -45,7 +49,9 @@ const translations: Partial<Record<string, any>> = {
     commitment: commitment_en,
     privacy: privacy_en,
     terms: terms_en,
-    cookies: cookies_en
+    cookies: cookies_en,
+    ecoFriendly: ecoFriendly_en,
+    greenTech: greenTech_en
   },
   fr: {
     header: header_fr,
@@ -60,7 +66,9 @@ const translations: Partial<Record<string, any>> = {
     commitment: commitment_fr,
     privacy: privacy_fr,
     terms: terms_fr,
-    cookies: cookies_fr
+    cookies: cookies_fr,
+    ecoFriendly: ecoFriendly_fr,
+    greenTech: greenTech_fr
   },
 };
 
