@@ -1,21 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
+    --glass-bg: rgba(0, 0, 0, 0.05);
+    --glass-border: rgba(0, 0, 0, 0.1);
   }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'cv11', 'ss01';
+  font-variation-settings: 'opsz' 32;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #facc15, #eab308);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #eab308, #ca8a04);
+}
+
+/* Glass morphism utility classes */
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-md border border-black/30;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-glass;
+  }
+  
+  .glass-button {
+    @apply bg-gradient-to-r from-primary-500/20 to-accent-500/20 backdrop-blur-md border border-primary-400/30 rounded-xl hover:from-primary-400/30 hover:to-accent-400/30 transition-all duration-300;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent;
+  }
+  
+  .gradient-border {
+    @apply relative;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    @apply absolute inset-0 rounded-xl bg-gradient-to-r from-primary-500 to-accent-500 p-[1px];
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+  }
+  
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-glow;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Smooth animations for page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  @apply outline-none ring-2 ring-primary-400 ring-offset-2 ring-offset-neutral-900;
+}
+
+/* Custom selection colors */
+::selection {
+  background: rgba(251, 191, 36, 0.3);
+  color: inherit;
+}
+
+::-moz-selection {
+  background: rgba(251, 191, 36, 0.3);
+  color: inherit;
+}
+
+/* Custom cursor styles */
+@layer utilities {
+  .cursor-glow {
+    cursor: pointer;
+  }
+  
+  .cursor-dot {
+    cursor: pointer;
+  }
+  
+  .cursor-expand {
+    cursor: pointer;
+  }
+  
+  .cursor-pointer-modern {
+    cursor: pointer;
+  }
+}
+
+/* Hover cursor effects */
+.hover-cursor-glow:hover {
+  cursor: pointer;
+}
+
+.hover-cursor-expand:hover {
+  cursor: pointer;
+}
+
+/* Interactive element cursor styles */
+button, 
+a, 
+[role="button"],
+input[type="submit"],
+input[type="button"],
+Link {
+  cursor: pointer !important;
+}
+
+button:hover,
+a:hover,
+[role="button"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+Link:hover {
+  cursor: pointer !important;
+}
+
+/* Special cursor for glass elements */
+.glass:hover,
+.glass-button:hover {
+  cursor: pointer !important;
+}
+
+/* Ensure all clickable elements show pointer */
+a,
+button,
+[onclick],
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+select,
+textarea {
+  cursor: pointer !important;
 }

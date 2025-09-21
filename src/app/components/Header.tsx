@@ -47,36 +47,42 @@ export default function Header() {
     
 
     return (
-        <header className="w-full bg-gray-900 text-white shadow-md fixed z-50 px-6 py-3">
-            <div className="relative flex justify-between items-center">
+        <header className="w-full glass backdrop-blur-xl border-b border-white/10 fixed z-50 top-0 left-0 right-0">
+            <div className="relative flex justify-between items-center px-4 lg:px-8 py-4">
                 {/* لوگو */}
-                <Link href={`/${currentLocale}`}
-                >
-                    <img src="/logo.png" alt="Company Logo" className="w-24 lg:w-32 h-auto mx-auto" />
+                <Link href={`/${currentLocale}`} className="group hover-cursor-glow">
+                    <img 
+                        src="/logo.png" 
+                        alt="Company Logo" 
+                        className="w-20 lg:w-28 h-auto transition-all duration-300 group-hover:scale-105" 
+                    />
                 </Link>
 
                 {/* نویگیشن دسکتاپ */}
-                <nav className="hidden ab lg:flex space-x-8">
+                <nav className="hidden lg:flex space-x-1">
                     {navLinks.map((link) => (
                         <NavItem key={link.href} link={link} openDropdown={openDropdown} setOpenDropdown={setOpenDropdown} />
                     ))}
                 </nav>
 
                 {/* دکمه‌های سمت راست */}
-                <div className="hidden lg:flex items-center space-x-4">
-                    <Link href="/request-consultation">
-                        <button className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg hover:bg-yellow-500 transition duration-300">
-                            {t("header.requestConsultation")}
+                <div className="hidden lg:flex items-center space-x-3">
+                    <Link href="/request-consultation" className="hover-cursor-expand">
+                        <button className="glass-button px-6 py-3 text-sm font-semibold text-white rounded-xl hover:shadow-glow transition-all duration-300 group">
+                            <span className="flex items-center gap-2">
+                                {t("header.requestConsultation")}
+                                <ChevronDownIcon className="h-4 w-4 rotate-[-90deg] group-hover:translate-x-1 transition-transform duration-300" />
+                            </span>
                         </button>
                     </Link>
                     <select
-                        className="bg-gray-800 text-white border border-gray-700 px-2 py-1 rounded-lg"
+                        className="glass bg-white/5 text-white border border-white/20 px-3 py-2 rounded-lg text-sm font-medium backdrop-blur-md hover:bg-white/10 transition-all duration-300 focus:ring-2 focus:ring-primary-400/50"
                         onChange={changeLanguage}
                         value={currentLocale}
                         disabled={isPending}
                     >
                         {locales.map((locale) => (
-                            <option key={locale} value={locale}>
+                            <option key={locale} value={locale} className="bg-neutral-800">
                                 {locale === "en" ? "English" : "Français"}
                             </option>
                         ))}
@@ -85,24 +91,51 @@ export default function Header() {
 
                 {/* آیکون همبرگر برای موبایل */}
                 <div className="lg:hidden">
-                    <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white">
-                        {isMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
+                    <button 
+                        onClick={() => setIsMenuOpen(!isMenuOpen)} 
+                        className="glass-button p-3 rounded-xl hover:shadow-glow transition-all duration-300 hover-cursor-expand"
+                    >
+                        {isMenuOpen ? (
+                            <XMarkIcon className="h-6 w-6 text-white" />
+                        ) : (
+                            <Bars3Icon className="h-6 w-6 text-white" />
+                        )}
                     </button>
                 </div>
             </div>
 
             {/* منوی موبایل */}
             {isMenuOpen && (
-                <div className="lg:hidden fixed top-16 right-0 bg-gray-900 w-full p-4">
-                    <nav className="flex flex-col space-y-4">
-                        {navLinks.map((link) => (
-                            <NavItem key={link.href} link={link} openDropdown={openDropdown} setOpenDropdown={setOpenDropdown} isMobile />
-                        ))}
-                    </nav>
+                <div className="lg:hidden absolute top-full left-0 right-0 glass backdrop-blur-xl border-t border-white/10 animate-slide-down">
+                    <div className="p-6">
+                        <nav className="flex flex-col space-y-2">
+                            {navLinks.map((link) => (
+                                <NavItem key={link.href} link={link} openDropdown={openDropdown} setOpenDropdown={setOpenDropdown} isMobile />
+                            ))}
+                        </nav>
+                        <div className="mt-6 pt-6 border-t border-white/10 flex flex-col space-y-3">
+                            <Link href="/request-consultation">
+                                <button className="w-full glass-button px-6 py-3 text-sm font-semibold text-white rounded-xl hover:shadow-glow transition-all duration-300">
+                                    {t("header.requestConsultation")}
+                                </button>
+                            </Link>
+                            <select
+                                className="w-full glass bg-white/5 text-white border border-white/20 px-3 py-2 rounded-lg text-sm font-medium backdrop-blur-md hover:bg-white/10 transition-all duration-300"
+                                onChange={changeLanguage}
+                                value={currentLocale}
+                                disabled={isPending}
+                            >
+                                {locales.map((locale) => (
+                                    <option key={locale} value={locale} className="bg-neutral-800">
+                                        {locale === "en" ? "English" : "Français"}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
+                    </div>
                 </div>
             )}
         </header>
-
     );
 }
 

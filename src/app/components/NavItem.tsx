@@ -29,21 +29,26 @@ const NavItem: React.FC<NavItemProps> = ({ link, openDropdown, setOpenDropdown, 
     }, [setOpenDropdown]);
 
     return (
-        <div ref={menuRef}  className={` ${isMobile ? "w-full" : ""}`}>
+        <div ref={menuRef} className={`${isMobile ? "w-full" : "relative"}`}>
             <Link
                 href={link.href}
                 onClick={() => setOpenDropdown(isOpen ? null : link.href)}
-                className={`flex items-center justify-between w-full font-medium text-white hover:text-yellow-400 transition ${
-                    isMobile ? "py-2 px-4" : ""
+                className={`flex items-center justify-between w-full font-medium text-white/90 hover:text-primary-400 transition-all duration-300 group hover-cursor-glow ${
+                    isMobile ? "py-3 px-4 rounded-xl hover:bg-white/5" : "px-4 py-2 rounded-lg hover:bg-white/5"
                 }`}
             >
-                {link.label} {link.subLinks && <ChevronDownIcon className="w-4 h-4 ml-1" />}
+                <span className="transition-colors duration-300">{link.label}</span>
+                {link.subLinks && (
+                    <ChevronDownIcon className={`w-4 h-4 ml-1 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+                )}
             </Link>
 
             {link.subLinks && isOpen && (
-                <div className={`bg-gray-800 shadow-lg transition-all duration-300 z-50 rounded-lg ${isMobile ? "pl-6" : "absolute left-0 top-full w-full"}`}>
-                    <div className={`max-w-[1200px] mx-auto p-6 ${isMobile ? "p-2" : ""}`}>
-                        <div className="grid grid-cols-3 gap-6">
+                <div className={`glass-card backdrop-blur-xl transition-all duration-300 z-50 animate-slide-down ${
+                    isMobile ? "mt-2 ml-4" : "absolute left-0 top-full w-screen max-w-4xl mt-2"
+                }`}>
+                    <div className={`p-6 ${isMobile ? "p-4" : ""}`}>
+                        <div className={`grid gap-6 ${isMobile ? "grid-cols-1" : "grid-cols-3"}`}>
                             {link.subLinks.map((subLink, index) => (
                                 <SubMenu 
                                     key={index} 
