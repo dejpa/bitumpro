@@ -105,13 +105,13 @@ export default function Footer() {
                         <div className="glass-card p-6 mt-6">
                             <h4 className="text-lg font-semibold text-primary-400 mb-3">{t("footer.stayUpdated")}</h4>
                             <p className="text-gray-300 text-sm mb-4">{t("footer.newsletterDescription")}</p>
-                            <div className="flex gap-2">
+                            <div className="flex flex-col sm:flex-row gap-3">
                                 <input 
                                     type="email" 
                                     placeholder={t("footer.emailPlaceholder")}
-                                    className="flex-1 bg-white/5 border border-white/20 rounded-lg px-3 py-2 text-sm text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-400/50"
+                                    className="flex-1 min-w-0 bg-white/5 border border-white/20 rounded-lg px-3 py-2 text-sm text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-400/50"
                                 />
-                                <button className="glass-button px-4 py-2 rounded-lg text-sm font-medium hover-cursor-expand">
+                                <button className="glass-button px-4 py-2 rounded-lg text-sm font-medium hover-cursor-expand flex-shrink-0">
                                     {t("footer.subscribe")}
                                 </button>
                             </div>
