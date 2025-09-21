@@ -3,6 +3,7 @@
 import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa6';
 import { usePathname } from "next/navigation";
 import { getTranslator } from "@/i18n";
+import Link from "next/link";
 
 const locales = ["en", "fr"];
 
@@ -48,19 +49,19 @@ export default function Footer() {
                         <h3 className="text-xl font-bold gradient-text">{t("footer.quickLinks")}</h3>
                         <ul className="space-y-3">
                             {[
-                                { href: "/privacy", label: t("footer.privacyPolicy") },
-                                { href: "/terms", label: t("footer.termsOfService") },
-                                { href: "/about", label: t("footer.aboutUs") },
-                                { href: "/contact", label: t("footer.contactUs") }
+                                { href: `/${currentLocale}/privacy`, label: t("footer.privacyPolicy") },
+                                { href: `/${currentLocale}/terms`, label: t("footer.termsOfService") },
+                                { href: `/${currentLocale}/about-us`, label: t("footer.aboutUs") },
+                                { href: `/${currentLocale}/contact`, label: t("footer.contactUs") }
                             ].map((link, index) => (
                                 <li key={index}>
-                                    <a 
+                                    <Link 
                                         href={link.href} 
                                         className="group flex items-center text-gray-300 hover:text-primary-400 transition-all duration-300 hover-cursor-glow py-2"
                                     >
                                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-3 group-hover:scale-125 transition-transform duration-300"></span>
                                         {link.label}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -121,19 +122,32 @@ export default function Footer() {
                 {/* Copyright Section */}
                 <div className="border-t border-white/10 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <p className="text-gray-300 text-sm">
-                            {t("footer.copyright")}
-                        </p>
+                        <div className="flex flex-col items-center md:items-start">
+                            <p className="text-gray-300 text-sm">
+                                {t("footer.copyright")}
+                            </p>
+                            <p className="text-gray-500 text-xs mt-1">
+                                Design & Development by{" "}
+                                <a 
+                                    href="https://www.melinaniavarani.com" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="text-gray-400 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow"
+                                >
+                                    Melina Niavarani
+                                </a>
+                            </p>
+                        </div>
                         <div className="flex space-x-6 text-sm">
-                            <a href="/privacy" className="text-gray-400 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow">
+                            <Link href={`/${currentLocale}/privacy`} className="text-gray-400 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow">
                                 {t("footer.privacy")}
-                            </a>
-                            <a href="/terms" className="text-gray-400 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow">
+                            </Link>
+                            <Link href={`/${currentLocale}/terms`} className="text-gray-400 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow">
                                 {t("footer.terms")}
-                            </a>
-                            <a href="/cookies" className="text-gray-400 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow">
+                            </Link>
+                            <Link href={`/${currentLocale}/cookies`} className="text-gray-400 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow">
                                 {t("footer.cookies")}
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
