@@ -108,7 +108,7 @@ export default function ExecutiveTeam() {
                           onError={(e) => {
                             // Fallback to icon if image fails to load
                             e.currentTarget.style.display = 'none';
-                            e.currentTarget.nextElementSibling.style.display = 'flex';
+                            (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
                           }}
                         />
                         <div className="w-full h-full bg-gray-800 flex items-center justify-center" style={{display: 'none'}}>
