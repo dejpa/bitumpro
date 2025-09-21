@@ -124,27 +124,27 @@ export default function Header() {
 
             {/* منوی موبایل */}
             {isMenuOpen && (
-                <div className="lg:hidden absolute top-full left-0 right-0 glass backdrop-blur-xl border-t border-white/10 animate-slide-down max-h-[80vh] overflow-y-auto">
+                <div className="lg:hidden absolute top-full left-0 right-0 bg-gray-800/90 backdrop-blur-2xl border-t border-white/20 animate-slide-down max-h-[80vh] overflow-y-auto shadow-2xl">
                     <div className="p-4">
                         <nav className="flex flex-col space-y-1">
                             {navLinks.map((link, index) => (
                                 <NavItem key={link.href || link.label || index} link={link} openDropdown={openDropdown} setOpenDropdown={setOpenDropdown} isMobile />
                             ))}
                         </nav>
-                        <div className="mt-4 pt-4 border-t border-white/10 flex flex-col space-y-3">
-                            <Link href="/request-consultation">
+                        <div className="mt-4 pt-4 border-t border-white/20 flex flex-col space-y-3">
+                            <Link href={`/${currentLocale}/contact`}>
                                 <button className="w-full glass-button px-4 py-3 text-sm font-semibold text-white rounded-xl hover:shadow-glow transition-all duration-300">
                                     {t("header.requestConsultation")}
                                 </button>
                             </Link>
                             <select
-                                className="w-full glass bg-white/5 text-white border border-white/20 px-3 py-2 rounded-lg text-sm font-medium backdrop-blur-md hover:bg-white/10 transition-all duration-300"
+                                className="w-full bg-gray-800/80 text-white border border-white/30 px-3 py-2 rounded-lg text-sm font-medium backdrop-blur-md hover:bg-gray-700/80 transition-all duration-300"
                                 onChange={changeLanguage}
                                 value={currentLocale}
                                 disabled={isPending}
                             >
                                 {locales.map((locale) => (
-                                    <option key={locale} value={locale} className="bg-neutral-800">
+                                    <option key={locale} value={locale} className="bg-gray-800 text-white">
                                         {locale === "en" ? "English" : "Français"}
                                     </option>
                                 ))}
