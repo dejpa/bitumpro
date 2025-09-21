@@ -40,6 +40,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Add a subtle background gradient to help with header contrast */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+  pointer-events: none;
+  z-index: 40;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

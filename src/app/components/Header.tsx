@@ -43,11 +43,17 @@ export default function Header() {
     };
      
 
-    const navLinks = getNavLinks(t, currentLocale)
+    const navLinks = getNavLinks(t, currentLocale);
     
 
     return (
-        <header className="w-full glass backdrop-blur-xl border-b border-white/10 fixed z-50 top-0 left-0 right-0">
+        <header className="w-full bg-gray-800/80 backdrop-blur-2xl border-b border-white/20 fixed z-50 top-0 left-0 right-0 shadow-2xl" style={{
+            background: 'linear-gradient(135deg, rgba(31, 41, 55, 0.75) 0%, rgba(17, 24, 39, 0.65) 50%, rgba(31, 41, 55, 0.8) 100%)',
+            backdropFilter: 'blur(25px) saturate(180%)',
+            WebkitBackdropFilter: 'blur(25px) saturate(180%)',
+            border: '1px solid rgba(255, 255, 255, 0.25)',
+            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
+        }}>
             <div className="relative flex justify-between items-center px-4 lg:px-8 py-4">
                 {/* لوگو */}
                 <Link href={`/${currentLocale}`} className="group hover-cursor-glow">
@@ -60,8 +66,19 @@ export default function Header() {
 
                 {/* نویگیشن دسکتاپ */}
                 <nav className="hidden lg:flex space-x-1">
-                    {navLinks.map((link) => (
-                        <NavItem key={link.href} link={link} openDropdown={openDropdown} setOpenDropdown={setOpenDropdown} />
+                    {navLinks.map((link, index) => (
+                        <NavItem 
+                            key={link.href || link.label || index} 
+                            link={link} 
+                            openDropdown={openDropdown} 
+                            setOpenDropdown={(value) => {
+                                setOpenDropdown(value);
+                                // Close mobile menu when dropdown opens
+                                if (value) {
+                                    setIsMenuOpen(false);
+                                }
+                            }} 
+                        />
                     ))}
                 </nav>
 
@@ -106,16 +123,16 @@ export default function Header() {
 
             {/* منوی موبایل */}
             {isMenuOpen && (
-                <div className="lg:hidden absolute top-full left-0 right-0 glass backdrop-blur-xl border-t border-white/10 animate-slide-down">
-                    <div className="p-6">
-                        <nav className="flex flex-col space-y-2">
-                            {navLinks.map((link) => (
-                                <NavItem key={link.href} link={link} openDropdown={openDropdown} setOpenDropdown={setOpenDropdown} isMobile />
+                <div className="lg:hidden absolute top-full left-0 right-0 glass backdrop-blur-xl border-t border-white/10 animate-slide-down max-h-[80vh] overflow-y-auto">
+                    <div className="p-4">
+                        <nav className="flex flex-col space-y-1">
+                            {navLinks.map((link, index) => (
+                                <NavItem key={link.href || link.label || index} link={link} openDropdown={openDropdown} setOpenDropdown={setOpenDropdown} isMobile />
                             ))}
                         </nav>
-                        <div className="mt-6 pt-6 border-t border-white/10 flex flex-col space-y-3">
+                        <div className="mt-4 pt-4 border-t border-white/10 flex flex-col space-y-3">
                             <Link href="/request-consultation">
-                                <button className="w-full glass-button px-6 py-3 text-sm font-semibold text-white rounded-xl hover:shadow-glow transition-all duration-300">
+                                <button className="w-full glass-button px-4 py-3 text-sm font-semibold text-white rounded-xl hover:shadow-glow transition-all duration-300">
                                     {t("header.requestConsultation")}
                                 </button>
                             </Link>

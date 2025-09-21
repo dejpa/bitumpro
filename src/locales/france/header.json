@@ -1,6 +1,7 @@
 {
     "home": "Accueil",
     "about": "À propos",
+    "aboutUs": "À propos de nous",
     "products": "Produits",
     "sustainability": "Durabilité",
     "career": "Carrière",
@@ -17,8 +18,15 @@
     "corporateGovernance": "Gouvernance d'entreprise",
     "boardOfDirectors": "Conseil d'administration",
     "groupManagement": "Gestion du groupe",
-
+   
     "ourJourney": "Notre parcours",
     "exploreBitumAsphalt": "Explorer BitumAsphalt",
-    "celebratingOurPast": "Célébrer notre passé"
+    "celebratingOurPast": "Célébrer notre passé",
+
+    "sustainableProducts": "Produits durables",
+    "guidingPrinciples": "Principes directeurs",
+    "QC": "QC",
+    "HSE": "HSE",
+    "people&society": "Personnes et société",
+    "SustainableDevelopmentPolicy": "Politique de développement durable"
 }
