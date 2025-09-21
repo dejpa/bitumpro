@@ -84,13 +84,14 @@ export default function Header() {
 
                 {/* دکمه‌های سمت راست */}
                 <div className="hidden lg:flex items-center space-x-3">
-                    <Link href="/request-consultation" className="hover-cursor-expand">
-                        <button className="glass-button px-6 py-3 text-sm font-semibold text-white rounded-xl hover:shadow-glow transition-all duration-300 group">
-                            <span className="flex items-center gap-2">
-                                {t("header.requestConsultation")}
-                                <ChevronDownIcon className="h-4 w-4 rotate-[-90deg] group-hover:translate-x-1 transition-transform duration-300" />
-                            </span>
-                        </button>
+                    <Link 
+                        href={`/${currentLocale}/contact`} 
+                        className="glass-button px-6 py-3 text-sm font-semibold text-white rounded-xl hover:shadow-glow transition-all duration-300 group hover-cursor-expand"
+                    >
+                        <span className="flex items-center gap-2">
+                            {t("header.requestConsultation")}
+                            <ChevronDownIcon className="h-4 w-4 rotate-[-90deg] group-hover:translate-x-1 transition-transform duration-300" />
+                        </span>
                     </Link>
                     <select
                         className="glass bg-white/5 text-white border border-white/20 px-3 py-2 rounded-lg text-sm font-medium backdrop-blur-md hover:bg-white/10 transition-all duration-300 focus:ring-2 focus:ring-primary-400/50"
