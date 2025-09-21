@@ -10,6 +10,9 @@ import contact_en from "@/locales/english/contact.json";
 import footer_en from "@/locales/english/footer.json";
 import products_en from "@/locales/english/products.json";
 import commitment_en from "@/locales/english/commitment.json";
+import privacy_en from "@/locales/english/privacy.json";
+import terms_en from "@/locales/english/terms.json";
+import cookies_en from "@/locales/english/cookies.json";
 
 import home_fr from "@/locales/france/home.json";
 import header_fr from "@/locales/france/header.json";
@@ -21,6 +24,9 @@ import contact_fr from "@/locales/france/contact.json";
 import footer_fr from "@/locales/france/footer.json";
 import products_fr from "@/locales/france/products.json";
 import commitment_fr from "@/locales/france/commitment.json";
+import privacy_fr from "@/locales/france/privacy.json";
+import terms_fr from "@/locales/france/terms.json";
+import cookies_fr from "@/locales/france/cookies.json";
 
 // تعریف زبان پیش‌فرض
 const DEFAULT_LOCALE = "en";
@@ -36,7 +42,10 @@ const translations: Partial<Record<string, any>> = {
     contact: contact_en,
     footer: footer_en,
     products: products_en,
-    commitment: commitment_en
+    commitment: commitment_en,
+    privacy: privacy_en,
+    terms: terms_en,
+    cookies: cookies_en
   },
   fr: {
     header: header_fr,
@@ -48,7 +57,10 @@ const translations: Partial<Record<string, any>> = {
     contact: contact_fr,
     footer: footer_fr,
     products: products_fr,
-    commitment: commitment_fr
+    commitment: commitment_fr,
+    privacy: privacy_fr,
+    terms: terms_fr,
+    cookies: cookies_fr
   },
 };
 
