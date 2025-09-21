@@ -18,15 +18,15 @@ export default function AboutUs() {
   const t = getTranslator(currentLocale);
 
   return (
-  <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white" suppressHydrationWarning>
     {/* Hero Section */}
     <section className="relative min-h-[70vh] flex items-center justify-center bg-cover bg-top overflow-hidden" style={{ backgroundImage: "url('/about-us-cover.webp')" }}>
       <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80"></div>
       
       {/* Floating animated elements */}
       <div className="absolute top-20 left-10 w-4 h-4 bg-primary-400/30 rounded-full animate-float"></div>
-      <div className="absolute top-40 right-20 w-6 h-6 bg-accent-400/20 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute bottom-40 left-20 w-3 h-3 bg-primary-500/40 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+      <div className="absolute top-40 right-20 w-6 h-6 bg-accent-400/20 rounded-full animate-float [animation-delay:2s]"></div>
+      <div className="absolute bottom-40 left-20 w-3 h-3 bg-primary-500/40 rounded-full animate-float [animation-delay:4s]"></div>
       
       <div className="container mx-auto text-center relative z-10 px-6">
         <h1 className="text-5xl lg:text-7xl font-bold mb-6 gradient-text text-shadow-lg">{t("aboutUs.heroTitle")}</h1>
@@ -65,7 +65,7 @@ export default function AboutUs() {
           </div>
 
           {/* Vision */}
-          <div className="glass-card p-8 hover-lift animate-scale-in group" style={{ animationDelay: '0.2s' }}>
+          <div className="glass-card p-8 hover-lift animate-scale-in group [animation-delay:0.2s]">
             <div className="w-16 h-16 bg-gradient-to-br from-accent-500/20 to-accent-600/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <FaCheckCircle className="h-8 w-8 text-accent-400" />
             </div>
@@ -79,7 +79,7 @@ export default function AboutUs() {
           </div>
 
           {/* Corporate Governance */}
-          <div className="glass-card p-8 hover-lift animate-scale-in group" style={{ animationDelay: '0.4s' }}>
+          <div className="glass-card p-8 hover-lift animate-scale-in group [animation-delay:0.4s]">
             <div className="w-16 h-16 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <FaShieldAlt className="h-8 w-8 text-primary-400" />
             </div>
@@ -105,7 +105,7 @@ export default function AboutUs() {
         </div> */}
 
           {/* History */}
-          <div className="glass-card p-8 hover-lift animate-scale-in group" style={{ animationDelay: '0.6s' }}>
+          <div className="glass-card p-8 hover-lift animate-scale-in group [animation-delay:0.6s]">
             <div className="w-16 h-16 bg-gradient-to-br from-accent-500/20 to-accent-600/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <FaHistory className="h-8 w-8 text-accent-400" />
             </div>

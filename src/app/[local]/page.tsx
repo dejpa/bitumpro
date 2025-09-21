@@ -21,7 +21,7 @@ export default function Home() {
 
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white" suppressHydrationWarning>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div
@@ -34,8 +34,8 @@ export default function Home() {
         {/* Floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 left-10 w-20 h-20 bg-primary-500/20 rounded-full blur-xl floating"></div>
-          <div className="absolute top-40 right-20 w-32 h-32 bg-accent-500/20 rounded-full blur-xl floating" style={{animationDelay: '2s'}}></div>
-          <div className="absolute bottom-40 left-20 w-16 h-16 bg-primary-400/30 rounded-full blur-lg floating" style={{animationDelay: '4s'}}></div>
+          <div className="absolute top-40 right-20 w-32 h-32 bg-accent-500/20 rounded-full blur-xl floating [animation-delay:2s]"></div>
+          <div className="absolute bottom-40 left-20 w-16 h-16 bg-primary-400/30 rounded-full blur-lg floating [animation-delay:4s]"></div>
         </div>
         
         <div className="container mx-auto text-center relative z-10 px-6">
@@ -96,7 +96,7 @@ export default function Home() {
             </div>
 
             {/* Mission */}
-            <div className="glass-card p-8 hover-lift group animate-slide-up" style={{animationDelay: '0.2s'}}>
+            <div className="glass-card p-8 hover-lift group animate-slide-up [animation-delay:0.2s]">
               <div className="text-center mb-6">
                 <div className="w-20 h-20 bg-gradient-to-br from-accent-500/20 to-accent-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <FaCheckCircle className="text-accent-400 h-10 w-10" />
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
 
             {/* Values */}
-            <div className="glass-card p-8 hover-lift group animate-slide-up" style={{animationDelay: '0.4s'}}>
+            <div className="glass-card p-8 hover-lift group animate-slide-up [animation-delay:0.4s]">
               <div className="text-center mb-6">
                 <div className="w-20 h-20 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <FaShieldAlt className="text-primary-400 h-10 w-10" />
@@ -172,7 +172,7 @@ export default function Home() {
             </div>
 
             {/* Product 2: Eco-Friendly Packaging */}
-            <div className="glass-card p-8 hover-lift group animate-scale-in" style={{animationDelay: '0.1s'}}>
+            <div className="glass-card p-8 hover-lift group animate-scale-in [animation-delay:0.1s]">
               <div className="text-center mb-6">
                 <div className="w-20 h-20 bg-gradient-to-br from-accent-500/20 to-accent-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300">
                   <FaBoxOpen className="text-accent-400 h-10 w-10" />
@@ -187,7 +187,7 @@ export default function Home() {
             </div>
 
             {/* Product 3: International Distribution */}
-            <div className="glass-card p-8 hover-lift group animate-scale-in" style={{animationDelay: '0.2s'}}>
+            <div className="glass-card p-8 hover-lift group animate-scale-in [animation-delay:0.2s]">
               <div className="text-center mb-6">
                 <div className="w-20 h-20 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300">
                   <FaGlobe className="text-primary-400 h-10 w-10" />
