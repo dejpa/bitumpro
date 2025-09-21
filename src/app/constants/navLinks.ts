@@ -11,32 +11,39 @@ export const getNavLinks = (t: (key: string) => string, currentLocale: string) =
         label: t("header.about"),
         subLinks: [
             { href: `/${currentLocale}/about-us`, label: t("header.aboutUs") },
-            {
-                href: `/${currentLocale}/about-us/our-business`,
-                label: t("header.ourBusiness"),
-                subLinks: [
-                    { href: `/${currentLocale}/about-us/our-business/this-is-us`, label: t("header.thisIsUs") },
-                    { href: `/${currentLocale}/about-us/our-business/sustainability`, label: t("header.sustainability") },
-                    { href: `/${currentLocale}/about-us/our-business/our-rnd`, label: t("header.ourRND") }
-                ]
-            },
             { href: `/${currentLocale}/about-us/our-vision`, label: t("header.ourVision") },
             {
-                href: `/${currentLocale}/about-us/corporate-governance`,
-                label: t("header.corporateGovernance"),
+                label: t("header.leadership"),
                 subLinks: [
-                    { href: `/${currentLocale}/about-us/corporate-governance/board-of-directors`, label: t("header.boardOfDirectors") },
-                    { href: `/${currentLocale}/about-us/corporate-governance/group-management`, label: t("header.groupManagement") }
+                    { href: `/${currentLocale}/about-us/leadership/executive-team`, label: t("header.executiveTeam") },
+                    { href: `/${currentLocale}/about-us/leadership/board-of-directors`, label: t("header.boardOfDirectors") },
+                    { href: `/${currentLocale}/about-us/leadership/management-team`, label: t("header.groupManagement") }
                 ]
             },
-            {
-                href: `/${currentLocale}/about-us/our-journey`,
-                label: t("header.ourJourney"),
-                subLinks: [
-                    { href: `/${currentLocale}/about-us/history/explore-bitumasphalt`, label: t("header.exploreBitumAsphalt") },
-                    { href: `/${currentLocale}/about-us/history/celebrating-our-past`, label: t("header.celebratingOurPast") }
-                ]
-            }
+            // {
+            //     label: t("header.ourBusiness"),
+            //     subLinks: [
+            //         { href: `/${currentLocale}/about-us/our-business/company-profile`, label: t("header.companyProfile") },
+            //         { href: `/${currentLocale}/about-us/our-business/our-rnd`, label: t("header.ourRND") },
+            //         { href: `/${currentLocale}/about-us/our-business/operations`, label: t("header.operations") }
+            //     ]
+            // },
+            // {
+            //     label: t("header.corporateGovernance"),
+            //     subLinks: [
+            //         { href: `/${currentLocale}/about-us/corporate-governance/policies`, label: t("header.policies") },
+            //         { href: `/${currentLocale}/about-us/corporate-governance/ethics-compliance`, label: t("header.ethicsCompliance") },
+            //         { href: `/${currentLocale}/about-us/corporate-governance/reports`, label: t("header.annualReports") }
+            //     ]
+            // },
+            // {
+            //     label: t("header.ourJourney"),
+            //     subLinks: [
+            //         { href: `/${currentLocale}/about-us/our-journey/history`, label: t("header.history") },
+            //         { href: `/${currentLocale}/about-us/our-journey/milestones`, label: t("header.milestones") },
+            //         { href: `/${currentLocale}/about-us/our-journey/awards`, label: t("header.awards") }
+            //     ]
+            // }
         ]
     },
     { href: `/${currentLocale}/products`, label: t("header.products") },
@@ -44,18 +51,35 @@ export const getNavLinks = (t: (key: string) => string, currentLocale: string) =
         label: t("header.sustainability"),
         subLinks: [
             { href: `/${currentLocale}/sustainability`, label: t("header.sustainability") },
+            { href: `/${currentLocale}/sustainability/our-commitment`, label: t("header.ourCommitment") },
             {
-                href: `/${currentLocale}/sustainability/guidingPrinciples`,
-                label: t("header.guidingPrinciples"),
+                label: t("header.sustainableProducts"),
                 subLinks: [
-                    { href: `/${currentLocale}/sustainability/guidingPrinciples/Sustainable-development-policy`, label: t("header.SustainableDevelopmentPolicy") },
-                    { href: `/${currentLocale}/sustainability/guidingPrinciples/HSE`, label: t("header.HSE") },
+                    { href: `/${currentLocale}/sustainability/sustainable-products/eco-friendly-solutions`, label: t("header.ecoFriendlySolutions") },
+                    { href: `/${currentLocale}/sustainability/sustainable-products/green-technology`, label: t("header.greenTechnology") },
+                    { href: `/${currentLocale}/sustainability/sustainable-products/certifications`, label: t("header.certifications") }
                 ]
             },
-            { href: `/${currentLocale}/sustainability/sustainableProducts`, label: t("header.sustainableProducts") },
+            // {
+            //     label: t("header.guidingPrinciples"),
+            //     subLinks: [
+            //         { href: `/${currentLocale}/sustainability/guiding-principles/environmental-policy`, label: t("header.environmentalPolicy") },
+            //         { href: `/${currentLocale}/sustainability/guiding-principles/hse-policy`, label: t("header.hsePolicy") },
+            //         { href: `/${currentLocale}/sustainability/guiding-principles/social-responsibility`, label: t("header.socialResponsibility") }
+            //     ]
+            // },
+            // {
+            //     label: t("header.environmentalImpact"),
+            //     subLinks: [
+            //         { href: `/${currentLocale}/sustainability/environmental-impact/carbon-footprint`, label: t("header.carbonFootprint") },
+            //         { href: `/${currentLocale}/sustainability/environmental-impact/waste-reduction`, label: t("header.wasteReduction") },
+            //         { href: `/${currentLocale}/sustainability/environmental-impact/renewable-energy`, label: t("header.renewableEnergy") }
+            //     ]
+            // },
+            // { href: `/${currentLocale}/sustainability/reports`, label: t("header.sustainabilityReports") }
         ]
     },
-    { href: `/${currentLocale}/career`, label: t("header.career") },
-    { href: `/${currentLocale}/media`, label: t("header.media") },
+    // { href: `/${currentLocale}/career`, label: t("header.career") },
+    // { href: `/${currentLocale}/media`, label: t("header.media") },
     { href: `/${currentLocale}/contact`, label: t("header.contact") }
 ];
