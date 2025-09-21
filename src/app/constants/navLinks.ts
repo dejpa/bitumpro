@@ -58,7 +58,7 @@ export const getNavLinks = (t: (key: string) => string, currentLocale: string) =
                 subLinks: [
                     { href: `/${currentLocale}/sustainability/sustainable-products/eco-friendly-solutions`, label: t("header.ecoFriendlySolutions") },
                     { href: `/${currentLocale}/sustainability/sustainable-products/green-technology`, label: t("header.greenTechnology") },
-                    { href: `/${currentLocale}/sustainability/sustainable-products/certifications`, label: t("header.certifications") }
+                    // { href: `/${currentLocale}/sustainability/sustainable-products/certifications`, label: t("header.certifications") }
                 ]
             },
             // {
