@@ -91,14 +91,30 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gray-800">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-5xl lg:text-7xl font-bold mb-6 gradient-text">
-            {t("contact.heroTitle")}
-          </h1>
-          <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            {t("contact.heroDescription")}
-          </p>
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+          style={{ backgroundImage: "url('/contact-cover.webp')" }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80"></div>
+        </div>
+        
+        {/* Floating elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 left-10 w-20 h-20 bg-primary-500/20 rounded-full blur-xl floating"></div>
+          <div className="absolute top-40 right-20 w-32 h-32 bg-accent-500/20 rounded-full blur-xl floating [animation-delay:2s]"></div>
+          <div className="absolute bottom-40 left-20 w-16 h-16 bg-primary-400/30 rounded-full blur-lg floating [animation-delay:4s]"></div>
+        </div>
+        
+        <div className="container mx-auto text-center relative z-10 px-6">
+          <div className="animate-fade-in">
+            <h1 className="text-6xl lg:text-8xl font-bold mb-6 gradient-text text-shadow-lg leading-tight">
+              {t("contact.heroTitle")}
+            </h1>
+            <p className="text-xl lg:text-2xl mb-12 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+              {t("contact.heroDescription")}
+            </p>
+          </div>
         </div>
       </section>
 
