@@ -8,6 +8,7 @@ import leadership_en from "@/locales/english/leadership.json";
 import sustainability_en from "@/locales/english/sustainability.json";
 import contact_en from "@/locales/english/contact.json";
 import footer_en from "@/locales/english/footer.json";
+import products_en from "@/locales/english/products.json";
 
 import home_fr from "@/locales/france/home.json";
 import header_fr from "@/locales/france/header.json";
@@ -17,6 +18,7 @@ import leadership_fr from "@/locales/france/leadership.json";
 import sustainability_fr from "@/locales/france/sustainability.json";
 import contact_fr from "@/locales/france/contact.json";
 import footer_fr from "@/locales/france/footer.json";
+import products_fr from "@/locales/france/products.json";
 
 // تعریف زبان پیش‌فرض
 const DEFAULT_LOCALE = "en";
@@ -30,7 +32,8 @@ const translations: Partial<Record<string, any>> = {
     leadership: leadership_en,
     sustainability: sustainability_en,
     contact: contact_en,
-    footer: footer_en
+    footer: footer_en,
+    products: products_en
   },
   fr: {
     header: header_fr,
@@ -40,7 +43,8 @@ const translations: Partial<Record<string, any>> = {
     leadership: leadership_fr,
     sustainability: sustainability_fr,
     contact: contact_fr,
-    footer: footer_fr
+    footer: footer_fr,
+    products: products_fr
   },
 };
 

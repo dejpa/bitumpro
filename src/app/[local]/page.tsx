@@ -48,7 +48,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link
-                href="/about-us"
+                href={`/${currentLocale}/about-us`}
                 className="glass-button px-8 py-4 text-lg font-semibold text-white rounded-2xl hover:shadow-glow transition-all duration-300 hover-cursor-expand group"
               >
                 <span className="flex items-center gap-3">
@@ -143,6 +143,8 @@ export default function Home() {
         </div>
       </section>
 
+
+
       {/* Products Section */}
       <section className="py-24 bg-gray-900">
         <div className="container mx-auto px-6">
@@ -212,6 +214,63 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      </section>
+      
+      {/* CEO Spotlight Section */}
+      <section className="py-24 bg-gray-900">
+  <div className="container mx-auto px-6">
+    <div className="max-w-4xl mx-auto">
+      <div className="glass-card p-12 hover-lift group animate-slide-up">
+        <div className="flex flex-col lg:flex-row gap-12 items-center">
+          {/* CEO Photo */}
+          <div className="flex-shrink-0">
+            <div className="w-64 h-64 rounded-full bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-3 group-hover:scale-105 transition-transform duration-300">
+              <div className="w-full h-full rounded-full overflow-hidden">
+                <img 
+                  src="/vahid-sheikhi.jpeg" 
+                  alt="Vahid Sheikhi - CEO"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          
+          {/* CEO Content */}
+          <div className="flex-1 text-center lg:text-left">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4 gradient-text">
+              Meet Our CEO
+            </h2>
+            <h3 className="text-2xl font-bold text-accent-400 mb-4">
+              Vahid Sheikhi
+            </h3>
+            <p className="text-xl text-primary-400 mb-6">
+              Chief Executive Officer
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-6">
+              With over 20 years of experience in the bitumen and asphalt industry, Vahid Sheikhi leads BitumAsphalt with a vision of sustainable infrastructure development. He holds an MBA in Entrepreneurship from Tehran University and has been an active member of the Iranian Oil, Gas and Petrochemical Products Exporters' Union since 2011.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link
+                href={`/${currentLocale}/about-us/leadership`}
+                className="glass-button px-6 py-3 text-sm font-semibold text-white rounded-xl hover:shadow-glow transition-all duration-300 hover-cursor-expand group"
+              >
+                <span className="flex items-center gap-2">
+                  Learn More
+                  <FaArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                </span>
+              </Link>
+              <Link
+                href={`/${currentLocale}/contact`}
+                className="glass bg-white/10 border border-white/20 text-white px-6 py-3 text-sm font-semibold rounded-xl hover:bg-white/20 hover:border-white/30 transition-all duration-300 hover-cursor-glow"
+              >
+                Contact CEO
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       </section>
 
       {/* Contact Information Section */}
