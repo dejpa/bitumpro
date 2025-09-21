@@ -5,12 +5,14 @@ import header_en from "@/locales/english/header.json";
 import aboutUs_en from "@/locales/english/aboutUs.json";
 import sustainability_en from "@/locales/english/sustainability.json";
 import contact_en from "@/locales/english/contact.json";
+import footer_en from "@/locales/english/footer.json";
 
 import home_fr from "@/locales/france/home.json";
 import header_fr from "@/locales/france/header.json";
 import aboutUs_fr from "@/locales/france/aboutUs.json";
 import sustainability_fr from "@/locales/france/sustainability.json";
 import contact_fr from "@/locales/france/contact.json";
+import footer_fr from "@/locales/france/footer.json";
 
 // تعریف زبان پیش‌فرض
 const DEFAULT_LOCALE = "en";
@@ -21,14 +23,16 @@ const translations: Partial<Record<string, any>> = {
     home: home_en,
     aboutUs: aboutUs_en,
     sustainability: sustainability_en,
-    contact_en
+    contact: contact_en,
+    footer: footer_en
   },
   fr: {
     header: header_fr,
     home: home_fr,
     aboutUs: aboutUs_fr,
     sustainability: sustainability_fr,
-    contact: contact_fr
+    contact: contact_fr,
+    footer: footer_fr
   },
 };
 
