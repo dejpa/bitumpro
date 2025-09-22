@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import StructuredData from "./components/StructuredData";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,35 +17,79 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BitumAsphalt | Innovative Bitumen Solutions & Sustainable Asphalt Products",
-  description: "BitumAsphalt is a leading provider of high-quality bitumen and asphalt solutions, offering innovative and sustainable products for infrastructure and road construction. With a commitment to excellence, we serve the Canadian and international markets with reliable and eco-friendly bitumen solutions.",
-  keywords: "Bitumen, Asphalt, Bitumen Products, Asphalt Solutions, Sustainable Bitumen, Road Construction Materials, Infrastructure Development, Industrial Bitumen, High-Quality Asphalt, Bitumen Supplier, Asphalt Manufacturer, Eco-Friendly Bitumen, Canada Bitumen Industry, Bitumen Exporter",
+  title: "BitumAsphalt | Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing | High-Value Petroleum Derivatives",
+  description: "Leading bitumen and asphalt supplier with 25 years of petroleum products expertise. We manufacture high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure. Expert petroleum products value creation and innovative asphalt manufacturing.",
+  keywords: "bitumen supplier, asphalt manufacturer, petroleum products, bitumen production, asphalt production, petroleum derivatives, high-value petroleum products, environmentally friendly petroleum derivatives, petroleum products value creation, bitumen solutions, asphalt solutions, petroleum industry, bitumen trading, asphalt trading, petroleum products manufacturing, bitumen manufacturing, asphalt manufacturing, petroleum derivatives production, petroleum products innovation, sustainable petroleum, petroleum export, bitumen export, asphalt export, petroleum products team leadership, petroleum derivatives production, petroleum industry expertise, petroleum products development, petroleum solutions, petroleum products sustainability, petroleum industry leadership, petroleum products excellence, premium bitumen, quality asphalt, petroleum products wholesale, bitumen wholesale, asphalt wholesale, petroleum products distribution, bitumen distribution, asphalt distribution, petroleum products supply chain, bitumen supply chain, asphalt supply chain, petroleum products global, bitumen global, asphalt global, petroleum products Canada, bitumen Canada, asphalt Canada, petroleum products UAE, bitumen UAE, asphalt UAE, petroleum products international, bitumen international, asphalt international",
+  authors: [{ name: "BitumAsphalt Team" }],
+  creator: "BitumAsphalt",
+  publisher: "BitumAsphalt",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://bitumasphalt.com'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en': '/en',
+      'fr': '/fr',
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
+    yandex: 'your-yandex-verification-code',
+  },
+  category: 'Petroleum Products & Bitumen Manufacturing',
+  classification: 'Petroleum Industry, Bitumen Production, Asphalt Manufacturing',
   icons: {
-    icon: "/favicon.ico", // Favicon اصلی
-    shortcut: "/favicon-16x16.png", // Favicon برای Shortcut
-    apple: "/apple-touch-icon.png", // Favicon برای دستگاه‌های Apple
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "BitumAsphalt | Innovative Bitumen & Asphalt Solutions",
-    description:  "BitumAsphalt provides high-quality, sustainable bitumen and asphalt products for infrastructure and road construction. Discover our innovative solutions for a greener future.",
-    url: "https://bitumasphalt.yourdomain.com",
+    title: "BitumAsphalt | Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing",
+    description: "Leading bitumen and asphalt supplier with 25 years of petroleum products expertise. We manufacture high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure development.",
+    url: "https://bitumasphalt.com",
     siteName: "BitumAsphalt",
     images: [
       {
-        url: "https://bitumasphalt.yourdomain.com",
+        url: "https://bitumasphalt.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Eco-Friendly Bio-Oil Mulch",
+        alt: "BitumAsphalt - Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing",
       },
     ],
     type: "website",
+    locale: "en_US",
+    countryName: "Canada",
   },
   twitter: {
     card: "summary_large_image",
     site: "@BitumAsphalt",
-    title: "Innovative Bitumen & Asphalt Solutions for Sustainable Infrastructure",
-    description: "Discover BitumAsphalt's high-quality, eco-friendly bitumen and asphalt products designed for modern infrastructure and road construction.",
-    // image: "https://mulch.yourdomain.com/images/twitter-card.jpg",
+    creator: "@BitumAsphalt",
+    title: "Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing - 25 Years of Excellence",
+    description: "Leading bitumen and asphalt supplier specializing in high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure development.",
+    images: ["https://bitumasphalt.com/twitter-card.jpg"],
+  },
+  other: {
+    'application-name': 'BitumAsphalt',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
+    'apple-mobile-web-app-title': 'BitumAsphalt',
+    'msapplication-TileColor': '#1a1a1a',
+    'theme-color': '#1a1a1a',
   },
 };
 
@@ -55,13 +100,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
-      <Header/>
-      <main className="pt-20">
-      {children}
-      </main>
-      <Footer/>
-    </body>
-  </html>
+      <head>
+        <StructuredData />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
+        <Header/>
+        <main className="pt-20">
+        {children}
+        </main>
+        <Footer/>
+      </body>
+    </html>
   );
 }
