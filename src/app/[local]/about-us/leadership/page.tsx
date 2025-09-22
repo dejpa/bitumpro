@@ -19,24 +19,24 @@ export default function ExecutiveTeam() {
       position: "Chief Executive Officer",
       positionFr: "Directeur Général",
       image: "/vahid-sheikhi.jpeg",
-      bio: "With over 20 years of experience in the bitumen and asphalt industry, Vahid Sheikhi leads BitumAsphalt with a vision of sustainable infrastructure development. He holds an MBA in Entrepreneurship from Tehran University and has been an active member of the Iranian Oil, Gas and Petrochemical Products Exporters' Union since 2011.",
-      bioFr: "Avec plus de 20 ans d'expérience dans l'industrie du bitume et de l'asphalte, Vahid Sheikhi dirige BitumAsphalt avec une vision de développement d'infrastructure durable. Il détient un MBA en Entrepreneuriat de l'Université de Téhéran et est membre actif de l'Union des Exportateurs de Produits Pétroliers, Gaziers et Pétrochimiques d'Iran depuis 2011.",
+      bio: "With over 25 years of experience in team leadership and petroleum products value creation, Vahid Sheikhi leads BitumAsphalt with a vision of sustainable infrastructure development. He specializes in producing high-value petroleum products and environmentally friendly petroleum derivatives through team building for innovation in valuable petroleum product development.",
+      bioFr: "Avec plus de 25 ans d'expérience en leadership d'équipe et création de valeur des produits pétroliers, Vahid Sheikhi dirige BitumAsphalt avec une vision de développement d'infrastructure durable. Il se spécialise dans la production de produits pétroliers à haute valeur et de dérivés pétroliers respectueux de l'environnement grâce à la construction d'équipe pour l'innovation dans le développement de produits pétroliers précieux.",
       achievements: [
-        "Active union member since 2010 and board member of the 8th term",
-        "CEO of Dejpa Industrial Bitumen and Asphalt Company since 2001",
-        "50 years of transparent family history in petroleum products",
-        "Export experience to over 33 countries"
+        "25 years of team leadership in petroleum products value creation",
+        "Expertise in producing high-value petroleum products and environmentally friendly petroleum derivatives",
+        "Team building for innovation in valuable petroleum product development",
+        "Creating wealth in the oil chain through knowledge, experience, and collective creativity"
       ],
       achievementsFr: [
-        "Membre actif de l'union depuis 2010 et membre du conseil d'administration du 8ème mandat",
-        "PDG de la Société de Bitume Industriel et d'Asphalte Dejpa depuis 2001",
-        "50 ans d'historique familial transparent dans les produits pétroliers",
-        "Expérience d'exportation vers plus de 33 pays"
+        "25 ans de leadership d'équipe dans la création de valeur des produits pétroliers",
+        "Expertise dans la production de produits pétroliers à haute valeur et de dérivés pétroliers respectueux de l'environnement",
+        "Construction d'équipe pour l'innovation dans le développement de produits pétroliers précieux",
+        "Création de richesse dans la chaîne pétrolière grâce à la connaissance, l'expérience et la créativité collective"
       ],
-      education: "MBA in Entrepreneurship, Tehran University",
-      educationFr: "MBA en Entrepreneuriat, Université de Téhéran",
-      experience: "20+ years in bitumen industry",
-      experienceFr: "20+ ans dans l'industrie du bitume"
+      education: "Advanced Business Management and Leadership",
+      educationFr: "Gestion d'Entreprise Avancée et Leadership",
+      experience: "25+ years in petroleum products value creation",
+      experienceFr: "25+ ans dans la création de valeur des produits pétroliers"
     }
   ];
 
@@ -99,7 +99,7 @@ export default function ExecutiveTeam() {
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
                   {/* Profile Image */}
                   <div className="flex-shrink-0">
-                    <div className="w-48 h-48 rounded-full bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-2 group-hover:scale-105 transition-transform duration-300">
+                    <div className="w-64 h-64 rounded-full bg-gradient-to-br from-primary-500/20 to-accent-500/20 p-2 group-hover:scale-105 transition-transform duration-300">
                       <div className="w-full h-full rounded-full overflow-hidden">
                         <img 
                           src={leader.image} 

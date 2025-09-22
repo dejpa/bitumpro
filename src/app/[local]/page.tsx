@@ -247,7 +247,7 @@ export default function Home() {
               Chief Executive Officer
             </p>
             <p className="text-gray-300 leading-relaxed mb-6">
-              With over 20 years of experience in the bitumen and asphalt industry, Vahid Sheikhi leads BitumAsphalt with a vision of sustainable infrastructure development. He holds an MBA in Entrepreneurship from Tehran University and has been an active member of the Iranian Oil, Gas and Petrochemical Products Exporters' Union since 2011.
+              With over 25 years of experience in team leadership and petroleum products value creation, Vahid Sheikhi leads BitumAsphalt with a vision of sustainable infrastructure development. He specializes in producing high-value petroleum products and environmentally friendly petroleum derivatives through team building for innovation in valuable petroleum product development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
