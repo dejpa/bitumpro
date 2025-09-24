@@ -47,12 +47,12 @@ export default function Header() {
     
 
     return (
-        <header className="w-full bg-gray-800/80 backdrop-blur-2xl border-b border-white/20 fixed z-50 top-0 left-0 right-0 shadow-2xl" style={{
-            background: 'linear-gradient(135deg, rgba(31, 41, 55, 0.75) 0%, rgba(17, 24, 39, 0.65) 50%, rgba(31, 41, 55, 0.8) 100%)',
+        <header className="w-full bg-gray-800/60 backdrop-blur-2xl border-b border-white/20 fixed z-50 top-0 left-0 right-0 shadow-2xl" style={{
+            background: 'linear-gradient(135deg, rgba(31, 41, 55, 0.5) 0%, rgba(17, 24, 39, 0.4) 50%, rgba(31, 41, 55, 0.55) 100%)',
             backdropFilter: 'blur(25px) saturate(180%)',
             WebkitBackdropFilter: 'blur(25px) saturate(180%)',
             border: '1px solid rgba(255, 255, 255, 0.25)',
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
+            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
         }}>
             <div className="relative flex justify-between items-center px-4 lg:px-8 py-4">
                 {/* لوگو */}
