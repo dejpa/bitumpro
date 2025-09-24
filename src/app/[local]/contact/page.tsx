@@ -1,9 +1,10 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane } from "react-icons/fa";
 import { getTranslator } from "@/i18n";
 import { useState } from "react";
+import { SocialMediaIcons } from "../../components/SocialMediaIcon";
 
 const locales = ["en", "fr"];
 
@@ -82,11 +83,7 @@ export default function Contact() {
     }
   ];
 
-  const socialLinks = [
-    { icon: FaLinkedin, href: "https://www.linkedin.com/company/yourcompany", label: "LinkedIn" },
-    { icon: FaInstagram, href: "https://www.instagram.com/yourcompany", label: "Instagram" },
-    { icon: FaTwitter, href: "https://twitter.com/yourcompany", label: "Twitter" }
-  ];
+  // Social links are now handled by the SocialMediaIcons component
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
@@ -280,20 +277,7 @@ export default function Contact() {
               {/* Social Media */}
               <div className="glass-card p-6">
                 <h3 className="text-xl font-semibold text-white mb-4">{t("contact.followUs")}</h3>
-                <div className="flex space-x-4">
-                  {socialLinks.map((social, index) => (
-                    <a
-                      key={index}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-12 h-12 bg-white/5 border border-white/20 rounded-xl flex items-center justify-center hover:bg-white/10 hover:border-white/30 transition-all duration-300 group"
-                      aria-label={social.label}
-                    >
-                      <social.icon className="h-6 w-6 text-gray-300 group-hover:text-primary-400 transition-colors duration-300" />
-                    </a>
-                  ))}
-                </div>
+                <SocialMediaIcons size="md" spacing="normal" className="justify-center" />
               </div>
 
               {/* Quick Response Promise */}

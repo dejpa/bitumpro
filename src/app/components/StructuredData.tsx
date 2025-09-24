@@ -1,6 +1,7 @@
 "use client";
 
 import Script from 'next/script';
+import { getSocialMediaUrls } from '../constants/socialMedia';
 
 interface StructuredDataProps {
   locale?: string;
@@ -60,10 +61,7 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
           "contactType": "customer service",
           "availableLanguage": ["English", "French"]
         },
-        "sameAs": [
-          "https://www.linkedin.com/company/bitumasphalt",
-          "https://twitter.com/BitumAsphalt"
-        ]
+        "sameAs": getSocialMediaUrls()
       },
       {
         "@type": "Person",

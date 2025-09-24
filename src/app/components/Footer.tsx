@@ -1,9 +1,9 @@
 "use client";
 
-import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa6';
 import { usePathname } from "next/navigation";
 import { getTranslator } from "@/i18n";
 import Link from "next/link";
+import { SocialMediaIcons } from "./SocialMediaIcon";
 
 const locales = ["en", "fr"];
 
@@ -70,36 +70,7 @@ export default function Footer() {
                     {/* Social Media Section */}
                     <div className="space-y-6">
                         <h3 className="text-xl font-bold gradient-text">{t("footer.followUs")}</h3>
-                        <div className="flex space-x-4">
-                            {[
-                                { 
-                                    href: "https://www.instagram.com/yourcompany", 
-                                    icon: FaInstagram, 
-                                    label: "Instagram" 
-                                },
-                                { 
-                                    href: "https://www.linkedin.com/company/yourcompany", 
-                                    icon: FaLinkedin, 
-                                    label: "LinkedIn" 
-                                },
-                                { 
-                                    href: "https://twitter.com/yourcompany", 
-                                    icon: FaTwitter, 
-                                    label: "Twitter" 
-                                }
-                            ].map((social, index) => (
-                                <a
-                                    key={index}
-                                    href={social.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="glass-card p-4 hover-lift hover-cursor-expand group"
-                                    aria-label={social.label}
-                                >
-                                    <social.icon className="h-6 w-6 text-gray-300 group-hover:text-primary-400 transition-colors duration-300" />
-                                </a>
-                            ))}
-                        </div>
+                        <SocialMediaIcons size="md" spacing="normal" />
                         
                         {/* Newsletter signup */}
                         <div className="glass-card p-6 mt-6">
