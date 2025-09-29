@@ -244,10 +244,22 @@ export default function Home() {
                     {t("home.canadaOfficeAddress")}
                   </p>
                   <p className="text-gray-300">
-                    <span className="text-primary-400 font-medium">{t("home.phone")}:</span> +1 (778) 877-1052
+                    <span className="text-primary-400 font-medium">{t("home.phone")}:</span> 
+                    <a 
+                      href="tel:+16043383474" 
+                      className="text-white hover:text-primary-400 transition-colors duration-300 hover-cursor-glow ml-2"
+                    >
+                      +1 (604) 338-3474
+                    </a>
                   </p>
                   <p className="text-gray-300">
-                    <span className="text-accent-400 font-medium">{t("home.email")}:</span> info@company.com
+                    <span className="text-accent-400 font-medium">{t("home.email")}:</span> 
+                    <a 
+                      href="mailto:info@company.com" 
+                      className="text-white hover:text-accent-400 transition-colors duration-300 hover-cursor-glow ml-2"
+                    >
+                      info@company.com
+                    </a>
                   </p>
                 </div>
               </div>

@@ -33,12 +33,24 @@ export default function Footer() {
                             </div>
                             <div className="glass-card p-4 hover-lift">
                                 <p className="text-gray-300">
-                                    <span className="text-primary-400 font-medium">{t("footer.phone")}:</span> {t("footer.phoneValue")}
+                                    <span className="text-primary-400 font-medium">{t("footer.phone")}:</span> 
+                                    <a 
+                                        href="tel:+16043383474" 
+                                        className="text-white hover:text-primary-400 transition-colors duration-300 hover-cursor-glow ml-2"
+                                    >
+                                        +1 (604) 338-3474
+                                    </a>
                                 </p>
                             </div>
                             <div className="glass-card p-4 hover-lift">
                                 <p className="text-gray-300">
-                                    <span className="text-primary-400 font-medium">{t("footer.email")}:</span> {t("footer.emailValue")}
+                                    <span className="text-primary-400 font-medium">{t("footer.email")}:</span> 
+                                    <a 
+                                        href="mailto:info@company.com" 
+                                        className="text-white hover:text-primary-400 transition-colors duration-300 hover-cursor-glow ml-2"
+                                    >
+                                        info@company.com
+                                    </a>
                                 </p>
                             </div>
                         </div>

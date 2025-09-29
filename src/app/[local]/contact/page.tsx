@@ -259,19 +259,40 @@ export default function Contact() {
 
               {/* Contact Cards */}
               <div className="space-y-6">
-                {contactInfo.map((item, index) => (
-                  <div key={index} className="glass-card p-6 hover-lift group">
-                    <div className="flex items-start space-x-4">
-                      <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                        <item.icon className={`h-8 w-8 ${item.iconColor}`} />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
-                        <p className="text-gray-300 leading-relaxed">{item.details}</p>
+                {contactInfo.map((item, index) => {
+                  const isPhone = item.title === t("contact.phone");
+                  const isEmail = item.title === t("contact.email");
+                  
+                  return (
+                    <div key={index} className="glass-card p-6 hover-lift group">
+                      <div className="flex items-start space-x-4">
+                        <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                          <item.icon className={`h-8 w-8 ${item.iconColor}`} />
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
+                          {isPhone ? (
+                            <a 
+                              href="tel:+16043383474" 
+                              className="text-gray-300 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow leading-relaxed"
+                            >
+                              {item.details}
+                            </a>
+                          ) : isEmail ? (
+                            <a 
+                              href="mailto:info@company.com" 
+                              className="text-gray-300 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow leading-relaxed"
+                            >
+                              {item.details}
+                            </a>
+                          ) : (
+                            <p className="text-gray-300 leading-relaxed">{item.details}</p>
+                          )}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               {/* Social Media */}
