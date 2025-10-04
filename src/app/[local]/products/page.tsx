@@ -130,7 +130,7 @@ export default function Products() {
               {t("products.productCategories")}
             </h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              BitumAsphalt offers a diverse range of high-quality products to meet various industrial needs, 
+              Bitumpro offers a diverse range of high-quality products to meet various industrial needs, 
               focusing on three main categories: bitumen, hydrocarbon, and oil mulch.
             </p>
           </div>
@@ -233,7 +233,7 @@ export default function Products() {
                   {t("products.qualityAssurance")}
                 </h2>
                 <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                  BitumAsphalt's commitment to providing high-performance products ensures that each batch meets the exacting quality standards 
+                  Bitumpro's commitment to providing high-performance products ensures that each batch meets the exacting quality standards 
                   expected by customers, making us a trusted partner in the industry.
                 </p>
                 <div className="space-y-4">

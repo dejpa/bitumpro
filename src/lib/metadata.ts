@@ -10,14 +10,14 @@ export const generatePageMetadata = (
   page: string,
   locale: string = 'en'
 ): Metadata => {
-  const baseUrl = 'https://bitumasphalt.com'
+  const baseUrl = 'https://bitumpro.com'
   const isFrench = locale === 'fr'
   
   const metadataMap: Record<string, PageMetadata> = {
     home: {
       title: isFrench 
-        ? "BitumAsphalt | Fournisseur Principal de Bitume et d'Asphalte | Fabrication de Produits Pétroliers"
-        : "BitumAsphalt | Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing",
+        ? "Bitumpro | Fournisseur Principal de Bitume et d'Asphalte | Fabrication de Produits Pétroliers"
+        : "Bitumpro | Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing",
       description: isFrench
         ? "Fournisseur principal de bitume et d'asphalte avec 25 ans d'expertise en produits pétroliers. Nous fabriquons des produits pétroliers à haute valeur, des dérivés pétroliers respectueux de l'environnement et des solutions de bitume premium pour le développement d'infrastructure mondiale."
         : "Leading bitumen and asphalt supplier with 25 years of petroleum products expertise. We manufacture high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure development.",
@@ -103,7 +103,7 @@ export const generatePageMetadata = (
       title: pageMetadata.title,
       description: pageMetadata.description,
       url: `${baseUrl}/${locale}/${page}`,
-      siteName: 'BitumAsphalt',
+      siteName: 'Bitumpro',
       images: [
         {
           url: `${baseUrl}/og-${page}.jpg`,

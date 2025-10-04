@@ -9,35 +9,35 @@ export interface SocialMediaLink {
 export const socialMediaLinks: SocialMediaLink[] = [
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/company/bitumasphalt',
+    url: 'https://www.linkedin.com/company/bitumpro',
     icon: 'FaLinkedin',
     color: 'text-blue-400',
     hoverColor: 'hover:text-blue-300'
   },
   {
     name: 'Twitter',
-    url: 'https://twitter.com/BitumAsphalt',
+    url: 'https://twitter.com/Bitumpro',
     icon: 'FaTwitter',
     color: 'text-blue-300',
     hoverColor: 'hover:text-blue-200'
   },
   {
     name: 'Facebook',
-    url: 'https://www.facebook.com/BitumAsphalt',
+    url: 'https://www.facebook.com/Bitumpro',
     icon: 'FaFacebook',
     color: 'text-blue-500',
     hoverColor: 'hover:text-blue-400'
   },
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/bitumasphalt',
+    url: 'https://www.instagram.com/bitumpro',
     icon: 'FaInstagram',
     color: 'text-pink-400',
     hoverColor: 'hover:text-pink-300'
   },
   {
     name: 'YouTube',
-    url: 'https://www.youtube.com/@BitumAsphalt',
+    url: 'https://www.youtube.com/@Bitumpro',
     icon: 'FaYoutube',
     color: 'text-red-500',
     hoverColor: 'hover:text-red-400'

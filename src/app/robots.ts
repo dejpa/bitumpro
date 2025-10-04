@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/private/', '/admin/', '/api/'],
     },
-    sitemap: 'https://bitumasphalt.com/sitemap.xml',
+    sitemap: 'https://bitumpro.com/sitemap.xml',
   }
 }

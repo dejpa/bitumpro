@@ -215,8 +215,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
-      
+
 
       {/* Contact Information Section */}
       <section className="py-24 bg-gray-800">

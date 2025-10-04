@@ -19,8 +19,8 @@ export default function ExecutiveTeam() {
       position: "Chief Executive Officer",
       positionFr: "Directeur Général",
       image: "/vahid-sheikhi.jpeg",
-      bio: "With over 25 years of experience in team leadership and petroleum products value creation, Vahid Sheikhi leads BitumAsphalt with a vision of sustainable infrastructure development. He specializes in producing high-value petroleum products and environmentally friendly petroleum derivatives through team building for innovation in valuable petroleum product development.",
-      bioFr: "Avec plus de 25 ans d'expérience en leadership d'équipe et création de valeur des produits pétroliers, Vahid Sheikhi dirige BitumAsphalt avec une vision de développement d'infrastructure durable. Il se spécialise dans la production de produits pétroliers à haute valeur et de dérivés pétroliers respectueux de l'environnement grâce à la construction d'équipe pour l'innovation dans le développement de produits pétroliers précieux.",
+      bio: "With over 25 years of experience in team leadership and petroleum products value creation, Vahid Sheikhi leads Bitumpro with a vision of sustainable infrastructure development. He specializes in producing high-value petroleum products and environmentally friendly petroleum derivatives through team building for innovation in valuable petroleum product development.",
+      bioFr: "Avec plus de 25 ans d'expérience en leadership d'équipe et création de valeur des produits pétroliers, Vahid Sheikhi dirige Bitumpro avec une vision de développement d'infrastructure durable. Il se spécialise dans la production de produits pétroliers à haute valeur et de dérivés pétroliers respectueux de l'environnement grâce à la construction d'équipe pour l'innovation dans le développement de produits pétroliers précieux.",
       achievements: [
         "25 years of team leadership in petroleum products value creation",
         "Expertise in producing high-value petroleum products and environmentally friendly petroleum derivatives",

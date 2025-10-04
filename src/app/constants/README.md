@@ -19,7 +19,7 @@ To add a new social media platform:
      // ... existing links
      {
        name: 'TikTok',
-       url: 'https://www.tiktok.com/@bitumasphalt',
+       url: 'https://www.tiktok.com/@bitumpro',
        icon: 'FaTiktok',
        color: 'text-black',
        hoverColor: 'hover:text-gray-800'

@@ -13,12 +13,12 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://bitumasphalt.com/#organization",
-        "name": "BitumAsphalt",
-        "url": "https://bitumasphalt.com",
+        "@id": "https://bitumpro.com/#organization",
+        "name": "Bitumpro",
+        "url": "https://bitumpro.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://bitumasphalt.com/logo.png",
+          "url": "https://bitumpro.com/logo.png",
           "width": 400,
           "height": 100
         },
@@ -65,11 +65,11 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
       },
       {
         "@type": "Person",
-        "@id": "https://bitumasphalt.com/#person",
+        "@id": "https://bitumpro.com/#person",
         "name": "Vahid Sheikhi",
         "jobTitle": "Chief Executive Officer",
         "worksFor": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         },
         "description": "25 years of team leadership in petroleum products value creation, specializing in producing high-value petroleum products and environmentally friendly petroleum derivatives.",
         "alumniOf": "Advanced Business Management and Leadership",
@@ -89,36 +89,36 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
       },
       {
         "@type": "WebSite",
-        "@id": "https://bitumasphalt.com/#website",
-        "url": "https://bitumasphalt.com",
-        "name": "BitumAsphalt",
+        "@id": "https://bitumpro.com/#website",
+        "url": "https://bitumpro.com",
+        "name": "Bitumpro",
         "description": "Premier petroleum products and bitumen solutions company",
         "publisher": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         },
         "inLanguage": ["en", "fr"]
       },
       {
         "@type": "WebPage",
-        "@id": "https://bitumasphalt.com/#webpage",
-        "url": "https://bitumasphalt.com",
-        "name": "BitumAsphalt | Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing",
+        "@id": "https://bitumpro.com/#webpage",
+        "url": "https://bitumpro.com",
+        "name": "Bitumpro | Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing",
         "isPartOf": {
-          "@id": "https://bitumasphalt.com/#website"
+          "@id": "https://bitumpro.com/#website"
         },
         "about": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         },
         "description": "Leading bitumen and asphalt supplier with 25 years of expertise in high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure development.",
         "inLanguage": locale
       },
       {
         "@type": "Service",
-        "@id": "https://bitumasphalt.com/#service",
+        "@id": "https://bitumpro.com/#service",
         "name": "Petroleum Products Manufacturing & Trading",
         "description": "High-value petroleum products, environmentally friendly petroleum derivatives, and innovative bitumen solutions for global infrastructure development.",
         "provider": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         },
         "areaServed": [
           {
@@ -158,11 +158,11 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
         "name": "High-Value Petroleum Products",
         "description": "Premium petroleum products manufactured with 25 years of expertise in petroleum products value creation",
         "manufacturer": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         },
         "category": "Petroleum Products",
         "brand": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         }
       },
       {
@@ -170,11 +170,11 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
         "name": "Environmentally Friendly Petroleum Derivatives",
         "description": "Sustainable petroleum derivatives produced through innovative team building and petroleum products development",
         "manufacturer": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         },
         "category": "Petroleum Derivatives",
         "brand": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         }
       },
       {
@@ -182,11 +182,11 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
         "name": "Premium Bitumen",
         "description": "High-quality bitumen products for road construction and infrastructure development",
         "manufacturer": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         },
         "category": "Bitumen",
         "brand": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         },
         "additionalProperty": [
           {
@@ -206,11 +206,11 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
         "name": "Quality Asphalt",
         "description": "Premium asphalt products for road construction and infrastructure projects",
         "manufacturer": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         },
         "category": "Asphalt",
         "brand": {
-          "@id": "https://bitumasphalt.com/#organization"
+          "@id": "https://bitumpro.com/#organization"
         },
         "additionalProperty": [
           {
