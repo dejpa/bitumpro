@@ -109,7 +109,7 @@ export default function Footer() {
                             <p className="text-gray-300 text-sm">
                                 {t("footer.copyright")}
                             </p>
-                            {/* <p className="text-gray-500 text-xs mt-1">
+                            <p className="text-gray-500 text-xs mt-1">
                                 Design & Development by{" "}
                                 <a 
                                     href="https://www.melinaniavarani.com" 
@@ -119,7 +119,7 @@ export default function Footer() {
                                 >
                                     Melina Niavarani
                                 </a>
-                            </p> */}
+                            </p>
                         </div>
                         <div className="flex space-x-6 text-sm">
                             <Link href={`/${currentLocale}/privacy`} className="text-gray-400 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow">
