@@ -30,7 +30,7 @@ export const socialMediaLinks: SocialMediaLink[] = [
   },
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/bitumpro',
+    url: 'https://www.instagram.com/bitumpro.co',
     icon: 'FaInstagram',
     color: 'text-pink-400',
     hoverColor: 'hover:text-pink-300'
