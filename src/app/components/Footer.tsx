@@ -46,10 +46,10 @@ export default function Footer() {
                                 <p className="text-gray-300">
                                     <span className="text-primary-400 font-medium">{t("footer.email")}:</span> 
                                     <a 
-                                        href="mailto:info@company.com" 
+                                        href="mailto:info@bitumpro.com" 
                                         className="text-white hover:text-primary-400 transition-colors duration-300 hover-cursor-glow ml-2"
                                     >
-                                        info@company.com
+                                        info@bitumpro.com
                                     </a>
                                 </p>
                             </div>
