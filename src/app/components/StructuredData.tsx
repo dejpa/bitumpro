@@ -57,7 +57,7 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
         ],
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+1-604-XXX-XXXX",
+          "telephone": "+1-778-877-1052",
           "contactType": "customer service",
           "availableLanguage": ["English", "French"]
         },

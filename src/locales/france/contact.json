@@ -32,14 +32,14 @@
   "googleMaps": "Trouvez-nous sur Google Maps",
   "openGoogleMaps": "Ouvrir dans Google Maps",
   "addressValue": "1470 Camelot RD, West Vancouver, BC, Canada",
-  "phoneValue": "+1 (604) 338-3474",
+  "phoneValue": "+1 (778) 877-1052",
   "emailValue": "info@company.com",
   "hoursValue": "Lun - Ven: 9h00 - 18h00 HNP",
   "placeholders": {
     "fullName": "Votre nom complet",
     "email": "votre.email@exemple.com",
     "company": "Le nom de votre entreprise",
-    "phone": "+1 (555) 123-4567",
+    "phone": "+1 (778) 877-1052",
     "message": "Parlez-nous de votre projet ou de vos exigences..."
   }
 }

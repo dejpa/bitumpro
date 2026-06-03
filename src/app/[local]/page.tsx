@@ -245,10 +245,10 @@ export default function Home() {
                   <p className="text-gray-300">
                     <span className="text-primary-400 font-medium">{t("home.phone")}:</span> 
                     <a 
-                      href="tel:+16043383474" 
+                      href="tel:+17788771052" 
                       className="text-white hover:text-primary-400 transition-colors duration-300 hover-cursor-glow ml-2"
                     >
-                      +1 (604) 338-3474
+                      +1 (778) 877-1052
                     </a>
                   </p>
                   <p className="text-gray-300">

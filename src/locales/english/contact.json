@@ -32,14 +32,14 @@
   "googleMaps": "Find Us on Google Maps",
   "openGoogleMaps": "Open in Google Maps",
   "addressValue": "1470 Camelot RD, West Vancouver, BC, Canada",
-  "phoneValue": "+1 (604) 338-3474",
+  "phoneValue": "+1 (778) 877-1052",
   "emailValue": "info@bitumpro.com",
   "hoursValue": "Mon - Fri: 9:00 AM - 6:00 PM PST",
   "placeholders": {
     "fullName": "Your full name",
     "email": "your.email@example.com",
     "company": "Your company name",
-    "phone": "+1 (555) 123-4567",
+    "phone": "+1 (778) 877-1052",
     "message": "Tell us about your project or requirements..."
   }
 }

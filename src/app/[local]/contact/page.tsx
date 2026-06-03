@@ -273,7 +273,7 @@ export default function Contact() {
                           <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
                           {isPhone ? (
                             <a 
-                              href="tel:+16043383474" 
+                              href="tel:+17788771052" 
                               className="text-gray-300 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow leading-relaxed"
                             >
                               {item.details}
