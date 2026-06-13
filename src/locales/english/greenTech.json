@@ -1,27 +1,39 @@
 {
-  "heroTitle": "Green Technology",
-  "heroDescription": "Cutting-edge technology solutions that drive sustainability, efficiency, and innovation in the bitumen and asphalt industry.",
-  "requestDemo": "Request Demo",
-  "technologiesTitle": "Our Green Technologies",
-  "technologiesDescription": "We leverage advanced technology to create sustainable manufacturing processes and innovative solutions that reduce environmental impact.",
-  "innovationTitle": "Innovation Metrics",
-  "innovationDescription": "Our commitment to green technology is reflected in our research investments and technological achievements.",
-  "ctaTitle": "Embrace the Future",
-  "ctaDescription": "Discover how our green technology solutions can transform your operations and contribute to a more sustainable future.",
-  "contactUs": "Contact Us",
-  "learnEcoFriendly": "Learn About Eco-Friendly Solutions",
-  "smartManufacturing": "Smart Manufacturing",
-  "smartManufacturingDescription": "Our AI-powered manufacturing processes optimize resource usage, reduce waste, and ensure consistent quality while minimizing environmental impact.",
-  "automatedQualityControl": "Automated Quality Control",
-  "automatedQualityControlDescription": "Advanced robotics and machine learning systems provide precise quality control, reducing human error and ensuring sustainable production standards.",
-  "iotMonitoring": "IoT Monitoring",
-  "iotMonitoringDescription": "Internet of Things sensors monitor production parameters in real-time, enabling predictive maintenance and optimal resource utilization.",
-  "digitalSafetySystems": "Digital Safety Systems",
-  "digitalSafetySystemsDescription": "Integrated digital safety systems ensure worker protection and environmental compliance through real-time monitoring and automated safety protocols.",
-  "innovationLab": "Innovation Lab",
-  "innovationLabDescription": "Active research projects focusing on sustainable technology",
-  "patentsFiled": "Patents Filed",
-  "patentsFiledDescription": "Green technology patents in the last 3 years",
-  "efficiencyGain": "Efficiency Gain",
-  "efficiencyGainDescription": "Improvement in production efficiency through technology"
+"heroTitle": "Advanced Bitumen Technology",
+"heroDescription": "Nano-enhanced bitumen solutions designed to improve pavement durability, climate resistance, and long-term infrastructure performance.",
+
+"requestDemo": "Request Technical Consultation",
+
+"technologiesTitle": "Our Technology Focus",
+"technologiesDescription": "Bitumpro focuses on advanced material engineering, controlled blending, and nano-enhanced bitumen formulations that support stronger, longer-lasting pavement systems.",
+
+"innovationTitle": "Technology Advantages",
+"innovationDescription": "Our technology approach is built around performance, durability, material efficiency, and adaptation to demanding climate conditions.",
+
+"ctaTitle": "Build with Advanced Bitumen Technology",
+"ctaDescription": "Discover how Bitumpro’s Nano PMB technology can support more durable road construction, pavement preservation, and infrastructure performance.",
+
+"contactUs": "Contact Us",
+"learnEcoFriendly": "Learn About Sustainable Solutions",
+
+"smartManufacturing": "Controlled Production Process",
+"smartManufacturingDescription": "Our production approach combines controlled heating, mixing, and formulation processes to ensure consistent performance and reliable product quality.",
+
+"automatedQualityControl": "Quality Control & Testing",
+"automatedQualityControlDescription": "Product performance is supported through laboratory testing, technical evaluation, and quality control procedures aligned with infrastructure project requirements.",
+
+"iotMonitoring": "Nano-Enhanced Formulation",
+"iotMonitoringDescription": "Nano-engineered additives help improve thermal stability, elasticity, oxidation resistance, and performance under freeze-thaw and high-temperature conditions.",
+
+"digitalSafetySystems": "Scalable Production Design",
+"digitalSafetySystemsDescription": "Bitumpro’s production model is designed to support scalable output, future product development, and expansion into nano bitumen emulsions and asphalt sealers.",
+
+"innovationLab": "Nano PMB Technology",
+"innovationLabDescription": "Advanced polymer and nano-additive formulation designed for high-performance asphalt binders.",
+
+"patentsFiled": "Future Product Development",
+"patentsFiledDescription": "Planned expansion into nano bitumen emulsions and nano asphalt sealers as market demand grows.",
+
+"efficiencyGain": "Lifecycle Performance",
+"efficiencyGainDescription": "Technology designed to support longer pavement life, fewer maintenance cycles, and improved infrastructure value."
 }

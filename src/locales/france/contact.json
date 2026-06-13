@@ -1,45 +1,55 @@
 {
-  "heroTitle": "Contactez-nous",
-  "heroDescription": "Prêt à discuter de vos besoins en bitume et asphalte ? Nous sommes là pour vous aider avec des solutions innovantes pour vos projets.",
-  "formTitle": "Envoyez-nous un message",
-  "fullName": "Nom complet",
-  "emailAddress": "Adresse e-mail",
-  "company": "Entreprise",
-  "phoneNumber": "Numéro de téléphone",
-  "subject": "Sujet",
-  "message": "Message",
-  "required": "*",
-  "selectSubject": "Sélectionnez un sujet",
-  "generalInquiry": "Demande générale",
-  "requestQuote": "Demander un devis",
-  "productInfo": "Informations sur le produit",
-  "technicalSupport": "Support technique",
-  "partnership": "Partenariat",
-  "other": "Autre",
-  "sendMessage": "Envoyer le message",
-  "sending": "Envoi en cours...",
-  "contactInfo": "Informations de contact",
-  "contactDescription": "Nous nous engageons à fournir un service exceptionnel et des solutions innovantes. Contactez-nous via l'un des canaux ci-dessous, et nous vous répondrons rapidement.",
-  "address": "Adresse",
-  "phone": "Téléphone",
-  "email": "E-mail",
-  "businessHours": "Heures d'ouverture",
-  "followUs": "Suivez-nous",
-  "quickResponse": "Garantie de réponse rapide",
-  "quickResponseText": "Nous répondons généralement à toutes les demandes dans les 24 heures en jours ouvrables. Pour les questions urgentes, veuillez nous appeler directement.",
-  "findUs": "Trouvez-nous",
-  "findUsDescription": "Visitez notre bureau dans la magnifique West Vancouver, BC",
-  "googleMaps": "Trouvez-nous sur Google Maps",
-  "openGoogleMaps": "Ouvrir dans Google Maps",
-  "addressValue": "1470 Camelot RD, West Vancouver, BC, Canada",
-  "phoneValue": "+1 (778) 877-1052",
-  "emailValue": "info@company.com",
-  "hoursValue": "Lun - Ven: 9h00 - 18h00 HNP",
-  "placeholders": {
-    "fullName": "Votre nom complet",
-    "email": "votre.email@exemple.com",
-    "company": "Le nom de votre entreprise",
-    "phone": "+1 (778) 877-1052",
-    "message": "Parlez-nous de votre projet ou de vos exigences..."
-  }
+"heroTitle": "Contactez-nous",
+"heroDescription": "Vous souhaitez discuter de vos besoins en infrastructures, bitume, Nano PMB, produits pétroliers ou restauration des terres ? Notre équipe est à votre disposition pour vous fournir des conseils techniques, des informations produit et un accompagnement commercial adapté à votre projet.",
+
+"formTitle": "Envoyez-nous un message",
+"fullName": "Nom complet",
+"emailAddress": "Adresse e-mail",
+"company": "Entreprise",
+"phoneNumber": "Numéro de téléphone",
+"subject": "Sujet",
+"message": "Message",
+"required": "*",
+
+"selectSubject": "Sélectionnez un sujet",
+"generalInquiry": "Demande générale",
+"requestQuote": "Demander un devis",
+"productInfo": "Informations produit",
+"technicalSupport": "Support technique",
+"partnership": "Partenariat",
+"other": "Autre",
+
+"sendMessage": "Envoyer le message",
+"sending": "Envoi en cours...",
+
+"contactInfo": "Informations de contact",
+"contactDescription": "Que vous ayez besoin de spécifications produit, de conseils techniques, d’informations tarifaires, d’opportunités de partenariat ou d’un accompagnement de projet, Bitumpro est prêt à vous aider. Contactez-nous via les canaux ci-dessous, et notre équipe vous répondra dans les meilleurs délais.",
+
+"address": "Adresse",
+"phone": "Téléphone",
+"email": "E-mail",
+"businessHours": "Heures d’ouverture",
+"followUs": "Suivez-nous",
+
+"quickResponse": "Réponse rapide",
+"quickResponseText": "Nous répondons généralement aux demandes professionnelles dans un délai de 24 heures les jours ouvrables. Pour les questions techniques ou commerciales urgentes, veuillez nous contacter directement par téléphone.",
+
+"findUs": "Trouvez-nous",
+"findUsDescription": "Visitez notre bureau à West Vancouver, en Colombie-Britannique.",
+
+"googleMaps": "Trouvez-nous sur Google Maps",
+"openGoogleMaps": "Ouvrir dans Google Maps",
+
+"addressValue": "1470 Camelot RD, West Vancouver, BC, Canada",
+"phoneValue": "+1 (778) 877-1052",
+"emailValue": "[info@bitumpro.com](mailto:info@bitumpro.com)",
+"hoursValue": "Lun - Ven : 9 h 00 - 18 h 00 HNP",
+
+"placeholders": {
+"fullName": "Votre nom complet",
+"email": "[votre.email@exemple.com](mailto:votre.email@exemple.com)",
+"company": "Le nom de votre entreprise",
+"phone": "+1 (778) 877-1052",
+"message": "Parlez-nous de votre projet, de vos besoins produit, de vos spécifications ou de vos questions techniques..."
+}
 }

@@ -1,27 +1,39 @@
 {
-  "heroTitle": "Solutions Écologiques",
-  "heroDescription": "Produits durables innovants qui protègent l'environnement tout en offrant des performances et une qualité supérieures.",
-  "requestQuote": "Demander un Devis",
-  "solutionsTitle": "Nos Solutions Écologiques",
-  "solutionsDescription": "Nous développons des solutions innovantes de bitume et d'asphalte qui privilégient la durabilité environnementale sans compromettre la qualité ou les performances.",
-  "benefitsTitle": "Avantages Environnementaux",
-  "benefitsDescription": "Nos solutions écologiques offrent des avantages environnementaux mesurables tout en maintenant les plus hauts standards de qualité et de durabilité.",
-  "ctaTitle": "Prêt à Passer au Vert ?",
-  "ctaDescription": "Rejoignez-nous pour construire un avenir plus durable avec nos solutions de bitume et d'asphalte écologiques. Contactez-nous pour en savoir plus sur nos initiatives environnementales.",
-  "contactUs": "Contactez-Nous",
-  "learnGreenTech": "En Savoir Plus sur la Technologie Verte",
-  "recycledMaterials": "Matériaux Recyclés",
-  "recycledMaterialsDescription": "Nous intégrons des matériaux recyclés dans nos produits de bitume et d'asphalte, réduisant les déchets et l'impact environnemental tout en maintenant des normes de qualité élevées.",
-  "waterBasedSolutions": "Solutions à Base d'Eau",
-  "waterBasedSolutionsDescription": "Nos formulations à base d'eau réduisent l'utilisation de solvants et de produits chimiques nocifs, offrant des alternatives plus sûres pour les travailleurs et l'environnement.",
-  "solarIntegration": "Intégration Solaire",
-  "solarIntegrationDescription": "Nous développons des solutions de bitume qui fonctionnent parfaitement avec les installations de panneaux solaires, créant une infrastructure énergétique durable.",
-  "biodegradableAdditives": "Additifs Biodégradables",
-  "biodegradableAdditivesDescription": "Nos additifs biodégradables améliorent les performances du produit tout en s'assurant qu'ils se décomposent naturellement sans nuire à l'écosystème.",
-  "environmentalImpact": "Impact Environnemental",
-  "environmentalImpactDescription": "Réduction de l'empreinte carbone par rapport aux solutions traditionnelles",
-  "costEfficiency": "Efficacité des Coûts",
-  "costEfficiencyDescription": "Coûts opérationnels plus faibles grâce aux pratiques durables",
-  "wasteReduction": "Réduction des Déchets",
-  "wasteReductionDescription": "Diminution des déchets de fabrication grâce au recyclage"
+"heroTitle": "Solutions d’Infrastructure Durables",
+"heroDescription": "Des technologies bitumineuses avancées conçues pour améliorer la performance des infrastructures tout en favorisant la durabilité à long terme et l’utilisation efficace des ressources.",
+
+"requestQuote": "Demander un devis",
+
+"solutionsTitle": "Nos Solutions Durables",
+"solutionsDescription": "Bitumpro développe des matériaux bitumineux avancés qui contribuent à prolonger la durée de vie des chaussées, améliorer la durabilité des infrastructures et réduire les coûts sur le cycle de vie grâce à l’innovation et à une ingénierie responsable des matériaux.",
+
+"benefitsTitle": "Avantages en Matière de Durabilité",
+"benefitsDescription": "Nos technologies sont conçues pour offrir une performance durable des infrastructures tout en favorisant une utilisation efficace des ressources et des pratiques de production responsables.",
+
+"ctaTitle": "Prêt à Construire des Infrastructures Plus Durables ?",
+"ctaDescription": "Découvrez comment les technologies bitumineuses avancées de Bitumpro peuvent améliorer les performances des chaussées, réduire les besoins de maintenance et soutenir la durabilité à long terme des infrastructures.",
+
+"contactUs": "Contactez-nous",
+"learnGreenTech": "Découvrir Notre Technologie",
+
+"recycledMaterials": "Durée de Vie Prolongée des Chaussées",
+"recycledMaterialsDescription": "Le bitume polymère modifié aux nanoparticules est conçu pour améliorer la durabilité des chaussées et contribuer à réduire la fréquence des travaux de réhabilitation et de maintenance.",
+
+"waterBasedSolutions": "Efficacité des Matériaux",
+"waterBasedSolutionsDescription": "Des formulations avancées permettent d’optimiser les performances des matériaux et d’améliorer l’efficacité des investissements dans les infrastructures tout au long du cycle de vie des chaussées.",
+
+"solarIntegration": "Production Locale au Canada",
+"solarIntegrationDescription": "La fabrication au Canada contribue à réduire les besoins en transport, à améliorer la fiabilité de l’approvisionnement et à limiter les émissions liées à la logistique.",
+
+"biodegradableAdditives": "Innovation par les Nanotechnologies",
+"biodegradableAdditivesDescription": "Notre technologie Nano PMB associe des polymères avancés et des additifs nano-ingénierés afin d’améliorer la stabilité thermique, l’élasticité et la résistance aux conditions climatiques difficiles.",
+
+"environmentalImpact": "Impact Réduit sur le Cycle de Vie",
+"environmentalImpactDescription": "Des chaussées plus durables peuvent contribuer à réduire la fréquence des opérations de maintenance, la consommation de ressources et les perturbations des infrastructures.",
+
+"costEfficiency": "Efficacité des Coûts sur le Cycle de Vie",
+"costEfficiencyDescription": "Une meilleure durabilité et de meilleures performances contribuent à réduire les coûts de maintenance sur toute la durée de vie des chaussées.",
+
+"wasteReduction": "Utilisation Responsable des Ressources",
+"wasteReductionDescription": "Des matériaux d’infrastructure durables favorisent une utilisation plus efficace des ressources et contribuent à réduire les reconstructions et interventions de maintenance inutiles."
 }

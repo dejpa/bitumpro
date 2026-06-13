@@ -1,37 +1,53 @@
 {
-  "heroTitle": "Our Commitment",
-  "heroDescription": "Building a sustainable future through responsible business practices, innovation, and environmental stewardship",
-  "joinOurMission": "Join Our Mission",
-  "ourCommitments": "Our Commitments",
-  "ourCommitmentsDescription": "At Bitumpro, we are committed to creating positive impact through responsible business practices, environmental stewardship, and community development.",
-  "ourValues": "Our Values",
-  "ourValuesDescription": "Our core values guide everything we do, from product development to customer relationships and community engagement.",
-  "sustainabilityGoals": "Sustainability Goals",
-  "sustainabilityGoalsDescription": "We have set ambitious targets to reduce our environmental impact and contribute to a more sustainable future.",
-  "joinOurJourney": "Join Our Journey",
-  "joinOurJourneyDescription": "Together, we can build a more sustainable future. Partner with us to create positive impact in your industry and community.",
-  "contactUs": "Contact Us",
-  "learnMoreSustainability": "Learn More About Sustainability",
-  "environmentalStewardship": "Environmental Stewardship",
-  "environmentalStewardshipDescription": "We are committed to reducing our environmental footprint through sustainable practices, eco-friendly products, and responsible manufacturing processes.",
-  "qualityExcellence": "Quality Excellence",
-  "qualityExcellenceDescription": "Every product undergoes rigorous testing and quality control to ensure it meets the highest industry standards and exceeds customer expectations.",
-  "communityImpact": "Community Impact",
-  "communityImpactDescription": "We actively contribute to the communities where we operate, supporting local development, education, and social welfare initiatives.",
-  "innovationTechnology": "Innovation & Technology",
-  "innovationTechnologyDescription": "We invest in cutting-edge technology and research to develop innovative solutions that advance the bitumen and asphalt industry.",
-  "integrity": "Integrity",
-  "integrityDescription": "We conduct business with the highest ethical standards, transparency, and honesty in all our interactions.",
-  "innovation": "Innovation",
-  "innovationDescription": "We continuously seek new ways to improve our products, processes, and services through innovation and technology.",
-  "partnership": "Partnership",
-  "partnershipDescription": "We build lasting relationships with our customers, suppliers, and stakeholders based on mutual trust and respect.",
-  "excellence": "Excellence",
-  "excellenceDescription": "We strive for excellence in everything we do, from product quality to customer service and operational efficiency.",
-  "wasteReduction": "Waste Reduction",
-  "wasteReductionDescription": "Reduce manufacturing waste by 50% by 2026 through improved processes and recycling initiatives.",
-  "carbonFootprint": "Carbon Footprint",
-  "carbonFootprintDescription": "Decrease our carbon footprint by 30% through renewable energy adoption and efficient operations.",
-  "globalStandards": "Global Standards",
-  "globalStandardsDescription": "Achieve 100% compliance with international environmental and safety standards across all operations."
+"heroTitle": "Our Commitment",
+"heroDescription": "Advancing infrastructure performance through responsible operations, innovation, quality, and long-term sustainability.",
+"joinOurMission": "Join Our Mission",
+
+"ourCommitments": "Our Commitments",
+"ourCommitmentsDescription": "At Bitumpro, we are committed to developing durable, high-performance bituminous and petroleum-based solutions while supporting responsible business practices, technical reliability, and sustainable infrastructure development.",
+
+"ourValues": "Our Values",
+"ourValuesDescription": "Our values guide how we develop products, support customers, build partnerships, and contribute to stronger infrastructure projects.",
+
+"sustainabilityGoals": "Sustainability Goals",
+"sustainabilityGoalsDescription": "Our sustainability approach focuses on extending pavement life, reducing maintenance frequency, improving material efficiency, and supporting responsible production and supply practices.",
+
+"joinOurJourney": "Join Our Journey",
+"joinOurJourneyDescription": "Partner with Bitumpro to build more durable infrastructure through advanced bitumen technologies, reliable supply, and responsible product development.",
+
+"contactUs": "Contact Us",
+"learnMoreSustainability": "Learn More About Sustainability",
+
+"environmentalStewardship": "Environmental Stewardship",
+"environmentalStewardshipDescription": "We aim to reduce environmental impact by promoting longer-lasting pavement materials, efficient production practices, and solutions that help reduce repeated maintenance and resource consumption.",
+
+"qualityExcellence": "Quality Excellence",
+"qualityExcellenceDescription": "We focus on consistent product quality, technical performance, and quality control processes designed to meet the demanding requirements of infrastructure and industrial projects.",
+
+"communityImpact": "Infrastructure Impact",
+"communityImpactDescription": "Our products are designed to support safer, more durable, and more reliable roads and infrastructure systems for the communities and industries they serve.",
+
+"innovationTechnology": "Innovation & Technology",
+"innovationTechnologyDescription": "We invest in advanced bitumen technologies, including Nano Polymer Modified Bitumen, to improve pavement durability, thermal stability, and resistance to harsh climate conditions.",
+
+"integrity": "Integrity",
+"integrityDescription": "We conduct business with transparency, responsibility, and respect in our relationships with customers, suppliers, partners, and stakeholders.",
+
+"innovation": "Innovation",
+"innovationDescription": "We continuously improve our products, formulations, and processes through technical knowledge, research, and practical industry experience.",
+
+"partnership": "Partnership",
+"partnershipDescription": "We build long-term relationships with municipalities, contractors, asphalt producers, industrial clients, suppliers, and infrastructure stakeholders based on trust and shared value.",
+
+"excellence": "Excellence",
+"excellenceDescription": "We strive for excellence in product performance, technical support, customer service, operational efficiency, and long-term reliability.",
+
+"wasteReduction": "Material Efficiency",
+"wasteReductionDescription": "Improve material efficiency through optimized formulations, responsible production processes, and solutions designed to support longer pavement service life.",
+
+"carbonFootprint": "Lower Lifecycle Impact",
+"carbonFootprintDescription": "Support lower lifecycle impact by developing durable materials that can reduce maintenance frequency, transportation needs, and repeated construction interventions.",
+
+"globalStandards": "Industry Standards",
+"globalStandardsDescription": "Align our products, testing, and operations with applicable industry, safety, environmental, and quality requirements across the markets we serve."
 }
