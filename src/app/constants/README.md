@@ -106,14 +106,11 @@ const urls = getSocialMediaUrls(); // Returns array of all social media URLs
 ### Current Social Media Platforms
 
 - LinkedIn
-- Twitter
-- Facebook
 - Instagram
-- YouTube
 
 ### Integration Points
 
-The xfiguration is automatically used in:
+The configuration is automatically used in:
 
 - Footer component
 - Contact page

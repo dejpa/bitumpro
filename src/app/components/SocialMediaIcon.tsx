@@ -1,6 +1,6 @@
 "use client";
 
-import { FaInstagram, FaLinkedin, FaTwitter, FaFacebook, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { SocialMediaLink } from '../constants/socialMedia';
 
 interface SocialMediaIconProps {
@@ -25,10 +25,7 @@ export default function SocialMediaIcon({
   // Map icon names to actual components
   const iconMap: { [key: string]: any } = {
     'FaInstagram': FaInstagram,
-    'FaLinkedin': FaLinkedin,
-    'FaTwitter': FaTwitter,
-    'FaFacebook': FaFacebook,
-    'FaYoutube': FaYoutube
+    'FaLinkedin': FaLinkedin
   };
   
   const IconComponent = iconMap[social.icon];
