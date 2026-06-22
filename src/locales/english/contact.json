@@ -42,12 +42,12 @@
 
 "addressValue": "1470 Camelot RD, West Vancouver, BC, Canada",
 "phoneValue": "+1 (778) 877-1052",
-"emailValue": "[info@bitumpro.com](mailto:info@bitumpro.com)",
+"emailValue": "info@bitumpro.com",
 "hoursValue": "Mon - Fri: 9:00 AM - 6:00 PM PST",
 
 "placeholders": {
 "fullName": "Your full name",
-"email": "[your.email@example.com](mailto:your.email@example.com)",
+"email": "your.email@example.com",
 "company": "Your company name",
 "phone": "+1 (778) 877-1052",
 "message": "Tell us about your project, product requirements, specifications, or technical questions..."

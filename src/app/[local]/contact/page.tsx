@@ -280,7 +280,7 @@ export default function Contact() {
                             </a>
                           ) : isEmail ? (
                             <a 
-                              href="mailto:info@company.com" 
+                              href={`mailto:${item.details}`}
                               className="text-gray-300 hover:text-primary-400 transition-colors duration-300 hover-cursor-glow leading-relaxed"
                             >
                               {item.details}
