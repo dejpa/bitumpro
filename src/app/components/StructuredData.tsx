@@ -22,22 +22,22 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
           "width": 400,
           "height": 100
         },
-        "description": "Premier bitumen and asphalt supplier with 25 years of team leadership in petroleum products value creation, specializing in high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure development.",
-        "foundingDate": "2001",
-        "numberOfEmployees": "50-200",
-        "industry": "Petroleum Products Manufacturing, Bitumen Production, Asphalt Manufacturing",
-        "slogan": "Creating wealth in the oil chain through knowledge, experience, and collective creativity",
+        "description": "British Columbia-based manufacturing startup developing Nano Polymer Modified Bitumen (Nano PMB) for durable, climate-resilient infrastructure.",
+        "foundingDate": "2025",
+        "numberOfEmployees": "7-10",
+        "industry": "Nano Polymer Modified Bitumen Manufacturing, Asphalt Binder Technology, Infrastructure Materials",
+        "slogan": "High-performance nano-modified binders for more durable infrastructure",
         "knowsAbout": [
           "Bitumen Production",
-          "Asphalt Manufacturing", 
-          "Petroleum Products Manufacturing",
-          "High-Value Petroleum Products",
-          "Environmentally Friendly Petroleum Derivatives",
-          "Petroleum Products Value Creation",
-          "Bitumen Trading",
-          "Asphalt Trading",
-          "Petroleum Derivatives Production",
-          "Oil Chain Wealth Creation"
+          "Nano Polymer Modified Bitumen",
+          "Polymer Modified Bitumen",
+          "Nano-Modified Asphalt Binders",
+          "Asphalt Binder Manufacturing",
+          "Pavement Durability",
+          "Rutting Resistance",
+          "Freeze-Thaw Resistance",
+          "Quality Control",
+          "Infrastructure Materials"
         ],
         "address": [
           {
@@ -71,20 +71,18 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
         "worksFor": {
           "@id": "https://bitumpro.com/#organization"
         },
-        "description": "25 years of team leadership in petroleum products value creation, specializing in producing high-value petroleum products and environmentally friendly petroleum derivatives.",
-        "alumniOf": "Advanced Business Management and Leadership",
+        "description": "Over 25 years of executive and industrial experience in bitumen, petroleum refining, polymer-modified and nano-bitumen production, international logistics, quality control, and R&D.",
+        "alumniOf": "MBA in Entrepreneurship, University of Tehran",
         "knowsAbout": [
           "Bitumen Production",
-          "Asphalt Manufacturing",
-          "Petroleum Products Value Creation",
-          "High-Value Petroleum Products",
-          "Environmentally Friendly Petroleum Derivatives",
-          "Team Building for Innovation",
-          "Oil Chain Wealth Creation",
-          "Petroleum Products Manufacturing",
-          "Bitumen Trading",
-          "Asphalt Trading",
-          "Petroleum Derivatives Production"
+          "Nano Polymer Modified Bitumen",
+          "Polymer Modified Bitumen",
+          "Nano-Bitumen Production",
+          "Petroleum Refining",
+          "International Logistics",
+          "Quality Control",
+          "Research and Development",
+          "Industrial Plant Operations"
         ]
       },
       {
@@ -92,7 +90,7 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
         "@id": "https://bitumpro.com/#website",
         "url": "https://bitumpro.com",
         "name": "Bitumpro",
-        "description": "Premier petroleum products and bitumen solutions company",
+        "description": "Nano Polymer Modified Bitumen manufacturer and high-performance asphalt binder technology company",
         "publisher": {
           "@id": "https://bitumpro.com/#organization"
         },
@@ -102,21 +100,21 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
         "@type": "WebPage",
         "@id": "https://bitumpro.com/#webpage",
         "url": "https://bitumpro.com",
-        "name": "Bitumpro | Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing",
+        "name": "Bitumpro | Canadian Nano PMB Manufacturer",
         "isPartOf": {
           "@id": "https://bitumpro.com/#website"
         },
         "about": {
           "@id": "https://bitumpro.com/#organization"
         },
-        "description": "Leading bitumen and asphalt supplier with 25 years of expertise in high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure development.",
+        "description": "British Columbia-based manufacturer of Nano Polymer Modified Bitumen for durable, climate-resilient infrastructure.",
         "inLanguage": locale
       },
       {
         "@type": "Service",
         "@id": "https://bitumpro.com/#service",
-        "name": "Petroleum Products Manufacturing & Trading",
-        "description": "High-value petroleum products, environmentally friendly petroleum derivatives, and innovative bitumen solutions for global infrastructure development.",
+        "name": "Nano Polymer Modified Bitumen Manufacturing",
+        "description": "Production and technical support for Nano PMB, a high-performance asphalt binder designed for longer pavement life, rutting resistance, cracking resistance, and climate resilience.",
         "provider": {
           "@id": "https://bitumpro.com/#organization"
         },
@@ -127,101 +125,68 @@ export default function StructuredData({ locale = 'en' }: StructuredDataProps) {
           },
           {
             "@type": "Country", 
-            "name": "United Arab Emirates"
+            "name": "United States"
           },
           {
-            "@type": "Country",
-            "name": "Global"
+            "@type": "Continent",
+            "name": "South America"
           }
         ],
         "serviceType": [
-          "Petroleum Products Manufacturing",
-          "Bitumen Production",
-          "Asphalt Manufacturing",
-          "Bitumen Trading",
-          "Asphalt Trading",
-          "Petroleum Derivatives Trading",
-          "High-Value Petroleum Products",
-          "Environmentally Friendly Petroleum Derivatives",
-          "Premium Bitumen Solutions",
-          "Quality Asphalt Solutions",
-          "Petroleum Products Wholesale",
-          "Bitumen Wholesale",
-          "Asphalt Wholesale",
-          "Petroleum Products Distribution",
-          "Bitumen Distribution",
-          "Asphalt Distribution"
+          "Nano PMB Manufacturing",
+          "Polymer Modified Bitumen",
+          "Asphalt Binder Technology",
+          "Pilot Batches",
+          "Quality Control Testing",
+          "Technical Field Support",
+          "Infrastructure Materials"
         ]
       },
       {
         "@type": "Product",
-        "name": "High-Value Petroleum Products",
-        "description": "Premium petroleum products manufactured with 25 years of expertise in petroleum products value creation",
+        "name": "Nano Polymer Modified Bitumen",
+        "description": "Nano-enhanced polymer modified asphalt binder engineered for rutting resistance, cracking resistance, thermal stability, elasticity, and longer pavement life",
         "manufacturer": {
           "@id": "https://bitumpro.com/#organization"
         },
-        "category": "Petroleum Products",
+        "category": "Asphalt Binder",
         "brand": {
           "@id": "https://bitumpro.com/#organization"
         }
       },
       {
         "@type": "Product",
-        "name": "Environmentally Friendly Petroleum Derivatives",
-        "description": "Sustainable petroleum derivatives produced through innovative team building and petroleum products development",
+        "name": "Nano Bitumen Emulsions",
+        "description": "Future product line planned for urban resurfacing, cold mix applications, and pavement preservation",
         "manufacturer": {
           "@id": "https://bitumpro.com/#organization"
         },
-        "category": "Petroleum Derivatives",
+        "category": "Bitumen Emulsion",
         "brand": {
           "@id": "https://bitumpro.com/#organization"
         }
       },
       {
         "@type": "Product",
-        "name": "Premium Bitumen",
-        "description": "High-quality bitumen products for road construction and infrastructure development",
+        "name": "Nano Asphalt Sealers",
+        "description": "Future nano-enhanced asphalt sealers planned for waterproofing, surface protection, and pavement preservation",
         "manufacturer": {
           "@id": "https://bitumpro.com/#organization"
         },
-        "category": "Bitumen",
+        "category": "Asphalt Sealer",
         "brand": {
           "@id": "https://bitumpro.com/#organization"
         },
         "additionalProperty": [
           {
             "@type": "PropertyValue",
-            "name": "Grade",
-            "value": "Multiple grades available"
+            "name": "Roadmap",
+            "value": "Future product line"
           },
           {
             "@type": "PropertyValue", 
             "name": "Application",
-            "value": "Road construction, infrastructure, waterproofing"
-          }
-        ]
-      },
-      {
-        "@type": "Product",
-        "name": "Quality Asphalt",
-        "description": "Premium asphalt products for road construction and infrastructure projects",
-        "manufacturer": {
-          "@id": "https://bitumpro.com/#organization"
-        },
-        "category": "Asphalt",
-        "brand": {
-          "@id": "https://bitumpro.com/#organization"
-        },
-        "additionalProperty": [
-          {
-            "@type": "PropertyValue",
-            "name": "Type",
-            "value": "Hot mix, cold mix, polymer modified"
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "Application", 
-            "value": "Road construction, parking lots, driveways"
+            "value": "Waterproofing, pavement preservation, surface protection"
           }
         ]
       }

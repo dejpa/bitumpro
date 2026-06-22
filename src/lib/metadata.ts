@@ -16,11 +16,11 @@ export const generatePageMetadata = (
   const metadataMap: Record<string, PageMetadata> = {
     home: {
       title: isFrench 
-        ? "Bitumpro | Fournisseur Principal de Bitume et d'Asphalte | Fabrication de Produits Pétroliers"
-        : "Bitumpro | Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing",
+        ? "Bitumpro | Fabricant canadien de Nano PMB | Liants asphaltique haute performance"
+        : "Bitumpro | Canadian Nano PMB Manufacturer | High-Performance Asphalt Binders",
       description: isFrench
-        ? "Fournisseur principal de bitume et d'asphalte avec 25 ans d'expertise en produits pétroliers. Nous fabriquons des produits pétroliers à haute valeur, des dérivés pétroliers respectueux de l'environnement et des solutions de bitume premium pour le développement d'infrastructure mondiale."
-        : "Leading bitumen and asphalt supplier with 25 years of petroleum products expertise. We manufacture high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure development.",
+        ? "Bitumpro développe et fabrique du bitume polymère modifié aux nanoparticules (Nano PMB) en Colombie-Britannique pour des chaussées plus durables, résilientes au climat et économiques sur le cycle de vie."
+        : "Bitumpro develops and manufactures Nano Polymer Modified Bitumen (Nano PMB) in British Columbia for more durable, climate-resilient pavements with lower lifecycle costs.",
       keywords: [
         'bitumen supplier', 'asphalt manufacturer', 'petroleum products', 'bitumen production', 
         'asphalt production', 'petroleum derivatives', 'high-value petroleum products',
@@ -37,11 +37,11 @@ export const generatePageMetadata = (
     },
     leadership: {
       title: isFrench
-        ? "Équipe de Direction | Leadership en Produits Pétroliers | 25 Ans d'Expérience"
-        : "Leadership Team | Petroleum Products Leadership | 25 Years of Experience",
+        ? "Équipe de direction | Expertise en bitume, Nano PMB et innovation industrielle"
+        : "Leadership Team | Bitumen, Nano PMB, and Industrial Innovation Expertise",
       description: isFrench
-        ? "Rencontrez notre équipe de direction avec 25 ans d'expérience en leadership d'équipe et création de valeur des produits pétroliers. Expertise dans la production de produits pétroliers à haute valeur et de dérivés pétroliers respectueux de l'environnement."
-        : "Meet our leadership team with 25 years of experience in team leadership and petroleum products value creation. Expertise in producing high-value petroleum products and environmentally friendly petroleum derivatives.",
+        ? "Découvrez la direction de Bitumpro, menée par Vahid Sheikhi, avec plus de 25 ans d'expérience dans le bitume, le raffinage, la R&D, le contrôle qualité et les marchés internationaux."
+        : "Meet Bitumpro's leadership, led by Vahid Sheikhi, with 25+ years of experience in bitumen, refining, R&D, quality control, and international markets.",
       keywords: [
         'petroleum products leadership', 'bitumen industry leadership', 'asphalt industry leadership',
         'petroleum products team leadership', 'petroleum products value creation', 'oil chain wealth creation',
@@ -56,11 +56,11 @@ export const generatePageMetadata = (
     },
     products: {
       title: isFrench
-        ? "Produits | Bitume Premium | Asphalte de Qualité | Produits Pétroliers à Haute Valeur"
-        : "Products | Premium Bitumen | Quality Asphalt | High-Value Petroleum Products",
+        ? "Produits | Nano PMB | Nano-émulsions bitumineuses | Scellants d'asphalte nano"
+        : "Products | Nano PMB | Nano Bitumen Emulsions | Nano Asphalt Sealers",
       description: isFrench
-        ? "Découvrez notre gamme complète de produits bitume premium, asphalte de qualité et produits pétroliers à haute valeur. Solutions innovantes pour le développement d'infrastructure mondiale."
-        : "Discover our comprehensive range of premium bitumen, quality asphalt, and high-value petroleum products. Innovative solutions for global infrastructure development.",
+        ? "Découvrez la feuille de route produit de Bitumpro: Nano Polymer Modified Bitumen, futures nano-émulsions bitumineuses et scellants d'asphalte nano pour infrastructures durables."
+        : "Explore Bitumpro's product roadmap: Nano Polymer Modified Bitumen, future Nano Bitumen Emulsions, and Nano Asphalt Sealers for durable infrastructure.",
       keywords: [
         'premium bitumen', 'quality asphalt', 'high-value petroleum products', 'bitumen products',
         'asphalt products', 'petroleum products', 'bitumen grades', 'asphalt types',
@@ -74,11 +74,11 @@ export const generatePageMetadata = (
     },
     sustainability: {
       title: isFrench
-        ? "Durabilité | Produits Pétroliers Respectueux de l'Environnement | Développement Durable"
-        : "Sustainability | Environmentally Friendly Petroleum Products | Sustainable Development",
+        ? "Durabilité | Chaussées plus durables et coûts de cycle de vie réduits"
+        : "Sustainability | Longer-Lasting Pavements and Lower Lifecycle Costs",
       description: isFrench
-        ? "Engagés envers la durabilité avec des produits pétroliers respectueux de l'environnement et des dérivés pétroliers durables. Développement responsable dans l'industrie pétrolière."
-        : "Committed to sustainability with environmentally friendly petroleum products and sustainable petroleum derivatives. Responsible development in the petroleum industry.",
+        ? "La durabilité chez Bitumpro repose sur des matériaux plus durables, une production locale, moins de cycles de maintenance et une meilleure efficacité des infrastructures."
+        : "Bitumpro's sustainability approach focuses on durable materials, local production, fewer maintenance cycles, and improved infrastructure efficiency.",
       keywords: [
         'sustainable petroleum', 'environmentally friendly petroleum products', 'sustainable bitumen',
         'sustainable asphalt', 'green petroleum products', 'eco-friendly bitumen', 'eco-friendly asphalt',

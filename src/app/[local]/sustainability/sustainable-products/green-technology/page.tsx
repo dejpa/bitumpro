@@ -16,34 +16,34 @@ export default function GreenTechnology() {
   const technologies = [
     {
       icon: FaMicrochip,
-      title: "Smart Bitumen Production",
-      titleFr: "Production Intelligente de Bitume",
-      description: "AI-powered bitumen production processes that optimize temperature control, reduce energy consumption by 40%, and ensure consistent quality while minimizing environmental emissions.",
-      descriptionFr: "Processus de production de bitume alimentés par l'IA qui optimisent le contrôle de température, réduisent la consommation d'énergie de 40% et assurent une qualité constante tout en minimisant les émissions environnementales.",
+      title: "Nano-Enhanced Formulation",
+      titleFr: "Formulation nano-améliorée",
+      description: "Nano-clay and polymer additives are blended with bitumen to improve elasticity, thermal stability, rutting resistance, oxidation resistance, and cold-weather flexibility.",
+      descriptionFr: "Des additifs de nano-argile et de polymères sont mélangés au bitume afin d'améliorer l'élasticité, la stabilité thermique, la résistance à l'orniérage, la résistance à l'oxydation et la flexibilité par temps froid.",
       color: "primary"
     },
     {
       icon: FaRobot,
-      title: "Automated Oil Processing",
-      titleFr: "Traitement Automatisé du Pétrole",
-      description: "Advanced robotics in oil processing facilities that enhance efficiency, reduce human exposure to hazardous materials, and ensure precise control of processing parameters.",
-      descriptionFr: "Robotique avancée dans les installations de traitement du pétrole qui améliore l'efficacité, réduit l'exposition humaine aux matériaux dangereux et assure un contrôle précis des paramètres de traitement.",
+      title: "Controlled Production Process",
+      titleFr: "Processus de production contrôlé",
+      description: "The production setup is designed around controlled heating, mixing, storage, compounding, and packaging to maintain consistency while supporting lean startup operations.",
+      descriptionFr: "Le dispositif de production repose sur un chauffage, un mélange, un stockage, un compoundage et un conditionnement contrôlés afin de maintenir la constance tout en soutenant des opérations de lancement efficaces.",
       color: "accent"
     },
     {
       icon: FaDatabase,
-      title: "Real-time Quality Monitoring",
-      titleFr: "Surveillance Qualité en Temps Réel",
-      description: "IoT sensors continuously monitor bitumen viscosity, temperature, and composition, enabling predictive maintenance and ensuring optimal product quality throughout the supply chain.",
-      descriptionFr: "Les capteurs IoT surveillent continuellement la viscosité, la température et la composition du bitume, permettant une maintenance prédictive et assurant une qualité de produit optimale tout au long de la chaîne d'approvisionnement.",
+      title: "QC Laboratory Testing",
+      titleFr: "Essais en laboratoire QC",
+      description: "Laboratory testing, sampling procedures, and technical validation support ASTM, CSA, and Ministry of Transportation requirements for infrastructure adoption.",
+      descriptionFr: "Les essais en laboratoire, les procédures d'échantillonnage et la validation technique soutiennent les exigences ASTM, CSA et des ministères des Transports pour l'adoption dans les infrastructures.",
       color: "primary"
     },
     {
       icon: FaShieldAlt,
-      title: "Emission Control Systems",
-      titleFr: "Systèmes de Contrôle des Émissions",
-      description: "Integrated digital systems that monitor and control emissions from bitumen and oil processing, ensuring compliance with environmental regulations and reducing air pollution.",
-      descriptionFr: "Systèmes numériques intégrés qui surveillent et contrôlent les émissions du traitement du bitume et du pétrole, assurant la conformité aux réglementations environnementales et réduisant la pollution de l'air.",
+      title: "Scalable Facility Design",
+      titleFr: "Conception d'installation évolutive",
+      description: "The 2,000 m² BC facility is designed for 500 tons per month and up to 6,000 tons per year, with room for future Nano Emulsion and Nano Asphalt Sealer lines.",
+      descriptionFr: "L'installation de 2 000 m² en C.-B. est conçue pour 500 tonnes par mois et jusqu'à 6 000 tonnes par an, avec une capacité future pour les nano-émulsions et les scellants d'asphalte nano.",
       color: "accent"
     }
   ];
@@ -51,27 +51,27 @@ export default function GreenTechnology() {
   const innovations = [
     {
       icon: FaLightbulb,
-      title: "Bitumen Innovation Center",
-      titleFr: "Centre d'Innovation Bitume",
-      metric: "12+",
-      description: "Active R&D projects in sustainable bitumen and oil technologies",
-      descriptionFr: "Projets de R&D actifs dans les technologies durables de bitume et de pétrole"
+      title: "Annual Design Capacity",
+      titleFr: "Capacité annuelle conçue",
+      metric: "6,000 t",
+      description: "Maximum designed annual Nano PMB capacity in one 8-hour shift",
+      descriptionFr: "Capacité annuelle maximale de Nano PMB conçue sur un quart de 8 heures"
     },
     {
       icon: FaRocket,
-      title: "Industry Patents",
-      titleFr: "Brevets Industriels",
-      metric: "6",
-      description: "Green technology patents in oil and bitumen processing",
-      descriptionFr: "Brevets de technologie verte dans le traitement du pétrole et du bitume"
+      title: "Monthly Capacity",
+      titleFr: "Capacité mensuelle",
+      metric: "500 t",
+      description: "Initial production capacity designed for controlled scale-up",
+      descriptionFr: "Capacité initiale prévue pour une montée en puissance maîtrisée"
     },
     {
       icon: FaCog,
-      title: "Energy Efficiency",
-      titleFr: "Efficacité Énergétique",
-      metric: "45%",
-      description: "Reduction in energy consumption in bitumen production",
-      descriptionFr: "Réduction de la consommation d'énergie dans la production de bitume"
+      title: "Export Expansion",
+      titleFr: "Expansion export",
+      metric: "Year 3",
+      description: "Planned rollout toward the U.S. and selected South American markets",
+      descriptionFr: "Déploiement prévu vers les États-Unis et certains marchés d'Amérique du Sud"
     }
   ];
 
@@ -99,10 +99,7 @@ export default function GreenTechnology() {
               {t("greenTech.heroTitle")}
             </h1>
             <p className="text-xl lg:text-2xl mb-12 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              {currentLocale === 'fr' 
-                ? "Technologies de pointe révolutionnaires dans l'industrie du pétrole et du bitume, combinant intelligence artificielle, robotique avancée et systèmes IoT pour une production durable et efficace."
-                : "Revolutionary cutting-edge technologies in the oil and bitumen industry, combining artificial intelligence, advanced robotics, and IoT systems for sustainable and efficient production."
-              }
+              {t("greenTech.heroDescription")}
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link
@@ -127,10 +124,7 @@ export default function GreenTechnology() {
               {t("greenTech.technologiesTitle")}
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              {currentLocale === 'fr' 
-                ? "Nous exploitons les technologies les plus avancées pour révolutionner la production de bitume et le traitement du pétrole, en réduisant l'impact environnemental tout en maximisant l'efficacité et la qualité."
-                : "We leverage the most advanced technologies to revolutionize bitumen production and oil processing, reducing environmental impact while maximizing efficiency and quality."
-              }
+              {t("greenTech.technologiesDescription")}
             </p>
           </div>
           
@@ -167,10 +161,7 @@ export default function GreenTechnology() {
               {t("greenTech.innovationTitle")}
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              {currentLocale === 'fr' 
-                ? "Notre engagement envers l'innovation technologique verte se reflète dans nos investissements continus en R&D, nos brevets industriels et nos améliorations significatives de l'efficacité énergétique dans la production de bitume."
-                : "Our commitment to green technology innovation is reflected in our continuous R&D investments, industry patents, and significant improvements in energy efficiency in bitumen production."
-              }
+              {t("greenTech.innovationDescription")}
             </p>
           </div>
           
@@ -206,10 +197,7 @@ export default function GreenTechnology() {
               {t("greenTech.ctaTitle")}
             </h2>
             <p className="text-xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              {currentLocale === 'fr' 
-                ? "Découvrez comment nos technologies vertes révolutionnaires peuvent transformer vos opérations de production de bitume et de traitement du pétrole, tout en contribuant à un avenir plus durable et efficace."
-                : "Discover how our revolutionary green technologies can transform your bitumen production and oil processing operations, while contributing to a more sustainable and efficient future."
-              }
+              {t("greenTech.ctaDescription")}
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link

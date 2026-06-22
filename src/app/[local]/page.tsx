@@ -56,12 +56,12 @@ export default function Home() {
                   <FaArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
               </Link>
-              <a
-                href="/contact"
+              <Link
+                href={`/${currentLocale}/contact`}
                 className="glass bg-white/10 border border-white/20 text-white px-8 py-4 text-lg font-semibold rounded-2xl hover:bg-white/20 hover:border-white/30 transition-all duration-300 hover-cursor-glow"
               >
                 {t("home.getQuote")}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -254,10 +254,10 @@ export default function Home() {
                   <p className="text-gray-300">
                     <span className="text-accent-400 font-medium">{t("home.email")}:</span> 
                     <a 
-                      href="mailto:info@company.com" 
+                      href="mailto:info@bitumpro.com" 
                       className="text-white hover:text-accent-400 transition-colors duration-300 hover-cursor-glow ml-2"
                     >
-                      info@company.com
+                      info@bitumpro.com
                     </a>
                   </p>
                 </div>
@@ -277,13 +277,13 @@ export default function Home() {
             <p className="text-xl lg:text-2xl mb-12 text-gray-300 leading-relaxed">
               {t("home.readyToRestoreDescription")}
             </p>
-            <a
-              href="/contact"
+            <Link
+              href={`/${currentLocale}/contact`}
               className="group inline-flex items-center gap-3 glass-button px-12 py-6 text-xl font-bold rounded-2xl hover:shadow-glow transition-all duration-300 hover-cursor-expand"
             >
               {t("home.contactUs")}
               <FaArrowRight className="h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

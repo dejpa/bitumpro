@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bitumpro | Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing | High-Value Petroleum Derivatives",
-  description: "Leading bitumen and asphalt supplier with 25 years of petroleum products expertise. We manufacture high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure. Expert petroleum products value creation and innovative asphalt manufacturing.",
-  keywords: "bitumen supplier, asphalt manufacturer, petroleum products, bitumen production, asphalt production, petroleum derivatives, high-value petroleum products, environmentally friendly petroleum derivatives, petroleum products value creation, bitumen solutions, asphalt solutions, petroleum industry, bitumen trading, asphalt trading, petroleum products manufacturing, bitumen manufacturing, asphalt manufacturing, petroleum derivatives production, petroleum products innovation, sustainable petroleum, petroleum export, bitumen export, asphalt export, petroleum products team leadership, petroleum derivatives production, petroleum industry expertise, petroleum products development, petroleum solutions, petroleum products sustainability, petroleum industry leadership, petroleum products excellence, premium bitumen, quality asphalt, petroleum products wholesale, bitumen wholesale, asphalt wholesale, petroleum products distribution, bitumen distribution, asphalt distribution, petroleum products supply chain, bitumen supply chain, asphalt supply chain, petroleum products global, bitumen global, asphalt global, petroleum products Canada, bitumen Canada, asphalt Canada, petroleum products UAE, bitumen UAE, asphalt UAE, petroleum products international, bitumen international, asphalt international",
+  title: "Bitumpro | Canadian Nano PMB Manufacturer | High-Performance Asphalt Binders",
+  description: "Bitumpro Products Inc. develops and manufactures Nano Polymer Modified Bitumen (Nano PMB) in British Columbia for durable, climate-resilient infrastructure with improved rutting resistance, cracking resistance, and lower lifecycle costs.",
+  keywords: "Nano PMB, Nano Polymer Modified Bitumen, polymer modified bitumen, nano modified asphalt binder, asphalt binder manufacturer Canada, bitumen manufacturer British Columbia, high performance asphalt binder, pavement durability, rutting resistance, cracking resistance, freeze thaw resistance, climate resilient infrastructure, road construction materials, asphalt mix plants, municipal road projects, highway contractors, nano bitumen emulsion, nano asphalt sealer",
   authors: [{ name: "Bitumpro Team" }],
   creator: "Bitumpro",
   publisher: "Bitumpro",
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code',
     yandex: 'your-yandex-verification-code',
   },
-  category: 'Petroleum Products & Bitumen Manufacturing',
-  classification: 'Petroleum Industry, Bitumen Production, Asphalt Manufacturing',
+  category: 'Infrastructure Materials & Nano Modified Bitumen Manufacturing',
+  classification: 'Nano PMB Manufacturing, Asphalt Binder Technology, Infrastructure Materials',
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -79,8 +79,8 @@ export const metadata: Metadata = {
     ]
   },
   openGraph: {
-    title: "Bitumpro | Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing",
-    description: "Leading bitumen and asphalt supplier with 25 years of petroleum products expertise. We manufacture high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure development.",
+    title: "Bitumpro | Canadian Nano PMB Manufacturer",
+    description: "British Columbia-based manufacturer of Nano Polymer Modified Bitumen for durable, climate-resilient infrastructure.",
     url: "https://bitumpro.com",
     siteName: "Bitumpro",
     images: [
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
         url: "https://bitumpro.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Bitumpro - Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing",
+        alt: "Bitumpro - Canadian Nano PMB Manufacturer",
       },
     ],
     type: "website",
@@ -99,8 +99,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Bitumpro",
     creator: "@Bitumpro",
-    title: "Premier Bitumen & Asphalt Supplier | Petroleum Products Manufacturing - 25 Years of Excellence",
-    description: "Leading bitumen and asphalt supplier specializing in high-value petroleum products, environmentally friendly petroleum derivatives, and premium bitumen solutions for global infrastructure development.",
+    title: "Canadian Nano PMB Manufacturer | High-Performance Asphalt Binders",
+    description: "Nano Polymer Modified Bitumen engineered for longer pavement life, climate resilience, and lower lifecycle maintenance costs.",
     images: ["https://bitumpro.com/twitter-card.jpg"],
   },
   manifest: "/site.webmanifest",

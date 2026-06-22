@@ -16,34 +16,34 @@ export default function EcoFriendlySolutions() {
   const solutions = [
     {
       icon: FaRecycle,
-      title: "Sustainable Packaging",
-      titleFr: "Emballage Durable",
-      description: "From factory to execution, we ensure all our packaging materials cause minimal environmental damage. Our eco-friendly packaging solutions reduce waste and carbon footprint throughout the supply chain.",
-      descriptionFr: "De l'usine à l'exécution, nous nous assurons que tous nos matériaux d'emballage causent des dommages environnementaux minimaux. Nos solutions d'emballage écologiques réduisent les déchets et l'empreinte carbone tout au long de la chaîne d'approvisionnement.",
+      title: "Extended Pavement Life",
+      titleFr: "Durée de vie prolongée des chaussées",
+      description: "Nano PMB is engineered to improve rutting resistance, cracking resistance, elasticity, and thermal stability, helping roads last longer under heavy traffic and harsh climate conditions.",
+      descriptionFr: "Le Nano PMB est conçu pour améliorer la résistance à l'orniérage, la résistance à la fissuration, l'élasticité et la stabilité thermique, afin d'aider les routes à durer plus longtemps sous trafic lourd et conditions climatiques difficiles.",
       color: "primary"
     },
     {
       icon: FaLeaf,
-      title: "Bio Oil Mulch Technology",
-      titleFr: "Technologie Bio Oil Mulch",
-      description: "With superior technology, we produce bio oil mulch that causes minimal environmental damage. When applied in suitable locations, it effectively prevents dust storms and dust particles from spreading.",
-      descriptionFr: "Avec une technologie supérieure, nous produisons du paillis d'huile bio qui cause des dommages environnementaux minimaux. Lorsqu'il est appliqué dans des endroits appropriés, il empêche efficacement la propagation des tempêtes de poussière et des particules de poussière.",
+      title: "Lower Lifecycle Maintenance",
+      titleFr: "Maintenance réduite sur le cycle de vie",
+      description: "Longer pavement service life can reduce repeated repair cycles, road interventions, material use, and lifecycle maintenance costs for public and private infrastructure owners.",
+      descriptionFr: "Une durée de service plus longue des chaussées peut réduire les cycles de réparation répétés, les interventions routières, l'utilisation de matériaux et les coûts de maintenance sur le cycle de vie.",
       color: "accent"
     },
     {
       icon: FaShieldAlt,
-      title: "Dust Suppression",
-      titleFr: "Suppression de la Poussière",
-      description: "Our bio oil mulch technology provides effective dust control and suppression, protecting air quality and reducing respiratory health risks in affected areas.",
-      descriptionFr: "Notre technologie de paillis d'huile bio fournit un contrôle et une suppression efficaces de la poussière, protégeant la qualité de l'air et réduisant les risques pour la santé respiratoire dans les zones affectées.",
+      title: "Local Canadian Production",
+      titleFr: "Production locale au Canada",
+      description: "A domestic BC production facility helps reduce reliance on imported binders, shorten lead times, and lower logistics-related emissions for Canadian infrastructure projects.",
+      descriptionFr: "Une installation de production locale en Colombie-Britannique aide à réduire la dépendance aux liants importés, à raccourcir les délais et à limiter les émissions liées à la logistique pour les projets d'infrastructure canadiens.",
       color: "primary"
     },
     {
       icon: FaGlobe,
-      title: "Environmental Protection",
-      titleFr: "Protection de l'Environnement",
-      description: "Our eco-friendly solutions protect soil, water, and air quality while providing effective industrial applications that meet the highest environmental standards.",
-      descriptionFr: "Nos solutions écologiques protègent la qualité du sol, de l'eau et de l'air tout en fournissant des applications industrielles efficaces qui répondent aux plus hauts standards environnementaux.",
+      title: "Nano-Enhanced Material Efficiency",
+      titleFr: "Efficacité des matériaux nano-améliorés",
+      description: "Nano-additives can improve binder performance and support more efficient use of materials while maintaining the performance required by demanding infrastructure projects.",
+      descriptionFr: "Les additifs nano-ingénierés peuvent améliorer la performance du liant et soutenir une utilisation plus efficace des matériaux tout en maintenant le niveau requis pour les projets d'infrastructure exigeants.",
       color: "accent"
     }
   ];
@@ -51,27 +51,27 @@ export default function EcoFriendlySolutions() {
   const benefits = [
     {
       icon: FaRecycle,
-      title: "Packaging Waste Reduction",
-      titleFr: "Réduction des Déchets d'Emballage",
-      metric: "70%",
-      description: "Reduction in packaging waste from factory to execution",
-      descriptionFr: "Réduction des déchets d'emballage de l'usine à l'exécution"
+      title: "Longer Pavement Lifespan",
+      titleFr: "Durée de vie des chaussées prolongée",
+      metric: "10-20%",
+      description: "Recognized potential lifespan improvement for nano-enhanced PMB",
+      descriptionFr: "Potentiel reconnu d'amélioration de la durée de vie pour les PMB nano-améliorés"
     },
     {
       icon: FaShieldAlt,
-      title: "Dust Storm Prevention",
-      titleFr: "Prévention des Tempêtes de Poussière",
-      metric: "85%",
-      description: "Effective dust suppression and prevention of dust storms",
-      descriptionFr: "Suppression efficace de la poussière et prévention des tempêtes de poussière"
+      title: "Annual Design Capacity",
+      titleFr: "Capacité annuelle conçue",
+      metric: "6,000 t",
+      description: "Scalable BC facility capacity for domestic supply and export readiness",
+      descriptionFr: "Capacité évolutive de l'installation en C.-B. pour l'approvisionnement local et la préparation à l'export"
     },
     {
       icon: FaGlobe,
-      title: "Environmental Safety",
-      titleFr: "Sécurité Environnementale",
-      metric: "95%",
-      description: "Bio oil mulch causes minimal environmental damage",
-      descriptionFr: "Le paillis d'huile bio cause des dommages environnementaux minimaux"
+      title: "Domestic Launch Focus",
+      titleFr: "Lancement centré sur le marché local",
+      metric: "Canada",
+      description: "Initial focus on BC and Canadian infrastructure before phased export growth",
+      descriptionFr: "Priorité initiale à la C.-B. et aux infrastructures canadiennes avant une croissance export progressive"
     }
   ];
 
@@ -99,10 +99,7 @@ export default function EcoFriendlySolutions() {
               {t("ecoFriendly.heroTitle")}
             </h1>
             <p className="text-xl lg:text-2xl mb-12 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              {currentLocale === 'fr' 
-                ? "Des solutions d'emballage durables et une technologie de paillis d'huile bio innovante pour minimiser l'impact environnemental et contrôler efficacement la poussière."
-                : "Sustainable packaging solutions and innovative bio oil mulch technology to minimize environmental impact and effectively control dust."
-              }
+              {t("ecoFriendly.heroDescription")}
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link
@@ -127,10 +124,7 @@ export default function EcoFriendlySolutions() {
               {t("ecoFriendly.solutionsTitle")}
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              {currentLocale === 'fr' 
-                ? "Nous nous concentrons sur la création de solutions d'emballage durables qui minimisent les dommages environnementaux de l'usine à l'exécution, et notre technologie de pointe en paillis d'huile bio qui empêche efficacement la propagation des tempêtes de poussière."
-                : "We focus on creating sustainable packaging solutions that minimize environmental damage from factory to execution, and our advanced bio oil mulch technology that effectively prevents dust storms from spreading."
-              }
+              {t("ecoFriendly.solutionsDescription")}
             </p>
           </div>
           
@@ -167,10 +161,7 @@ export default function EcoFriendlySolutions() {
               {t("ecoFriendly.benefitsTitle")}
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              {currentLocale === 'fr' 
-                ? "Nos solutions écologiques offrent des avantages mesurables en réduisant les déchets d'emballage, en prévenant les tempêtes de poussière et en minimisant l'impact environnemental de nos produits."
-                : "Our eco-friendly solutions deliver measurable benefits by reducing packaging waste, preventing dust storms, and minimizing the environmental impact of our products."
-              }
+              {t("ecoFriendly.benefitsDescription")}
             </p>
           </div>
           
@@ -206,10 +197,7 @@ export default function EcoFriendlySolutions() {
               {t("ecoFriendly.ctaTitle")}
             </h2>
             <p className="text-xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              {currentLocale === 'fr' 
-                ? "Rejoignez-nous pour construire un avenir plus durable avec nos solutions d'emballage écologiques et notre technologie de paillis d'huile bio avancée. Contactez-nous pour découvrir comment nous pouvons minimiser l'impact environnemental de vos projets."
-                : "Join us in building a more sustainable future with our eco-friendly packaging solutions and advanced bio oil mulch technology. Contact us to discover how we can minimize the environmental impact of your projects."
-              }
+              {t("ecoFriendly.ctaDescription")}
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link

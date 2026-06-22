@@ -1,34 +1,34 @@
 {
 "heroTitle": "Our Products",
-"heroDescription": "Advanced bituminous and petroleum-based solutions for infrastructure, industrial operations, and land restoration projects.",
+"heroDescription": "Nano-modified asphalt binder solutions engineered for durable, climate-resilient infrastructure in Canada and future export markets.",
 
 "requestQuote": "Request Quote",
 "learnMoreAboutUs": "Learn More About Us",
 
 "productCategories": "Product Categories",
-"productCategoriesDescription": "Bitumpro provides a diversified portfolio of advanced bituminous and petroleum-based products. Our flagship Nano Polymer Modified Bitumen (Nano PMB) technology is complemented by conventional bitumen grades, industrial petroleum products, and oil mulch solutions serving infrastructure, industrial, and land restoration sectors.",
+"productCategoriesDescription": "Bitumpro's launch focus is Nano Polymer Modified Bitumen (Nano PMB), a next-generation asphalt binder combining polymer and nano-additive technology. Our scalable BC facility is also designed to support future Nano Bitumen Emulsion and Nano Asphalt Sealer product lines as market demand grows.",
 
 "completeProductRange": "Complete Product Portfolio",
-"completeProductRangeDescription": "Explore our comprehensive range of performance-driven products engineered to meet the demands of modern infrastructure, industrial operations, and environmental projects.",
+"completeProductRangeDescription": "Explore our focused product roadmap for high-performance road construction, pavement preservation, cold mix applications, waterproofing, and climate-resilient infrastructure.",
 
-"bitumen": "Advanced Bitumen Solutions",
-"bitumenDescription": "Including our flagship Nano Polymer Modified Bitumen technology, alongside conventional bitumen grades for infrastructure and road construction projects.",
+"bitumen": "Nano Polymer Modified Bitumen",
+"bitumenDescription": "Our flagship Nano PMB uses advanced polymer and nano-additive technology to improve rutting resistance, cracking resistance, elasticity, thermal stability, oxidation resistance, and pavement service life.",
 
-"hydrocarbon": "Industrial Petroleum Products",
-"hydrocarbonDescription": "A range of petroleum-based products and fuel oils supporting industrial operations, energy applications, manufacturing processes, and specialized infrastructure projects.",
+"hydrocarbon": "Nano Bitumen Emulsions",
+"hydrocarbonDescription": "Future-ready emulsion products planned for urban resurfacing, pavement preservation, cold mix applications, and infrastructure maintenance programs.",
 
-"oilMulch": "Oil Mulch Solutions",
-"oilMulchDescription": "Proven oil mulch technologies designed for soil stabilization, erosion control, moisture retention, dust suppression, and land restoration applications.",
+"oilMulch": "Nano Asphalt Sealers",
+"oilMulchDescription": "Planned nano-enhanced asphalt sealers for waterproofing, surface protection, pavement preservation, and reduced long-term maintenance cycles.",
 
 "qualityAssurance": "Quality Assurance",
-"qualityAssuranceDescription": "Bitumpro is committed to delivering reliable, high-performance products that meet demanding industry standards. Our focus on quality control, technical expertise, and continuous improvement ensures consistent performance across every product line.",
+"qualityAssuranceDescription": "Bitumpro will support product adoption through controlled production, QC laboratory testing, technical documentation, pilot batches, and alignment with ASTM, CSA, and provincial transportation requirements.",
 
-"isoCertified": "Advanced Manufacturing & Quality Control",
-"laboratoryServices": "Research, Development & Laboratory Testing",
-"internationalDistribution": "Canadian Production & Global Supply Network",
+"isoCertified": "2,000 m² BC facility with scalable 6,000-ton annual design capacity",
+"laboratoryServices": "QC laboratory, R&D, pilot batches, and technical field support",
+"internationalDistribution": "Canada launch with U.S. and South America export roadmap",
 
 "readyToGetStarted": "Ready to Get Started?",
-"readyToGetStartedDescription": "Our team is ready to provide technical guidance, product recommendations, specifications, and commercial support for your infrastructure, industrial, and land restoration projects.",
+"readyToGetStartedDescription": "Our team is ready to provide technical guidance, product specifications, pilot project support, pricing, and commercial consultation for municipalities, highway contractors, asphalt plants, and infrastructure developers.",
 
 "requestProductInformation": "Request Product Information",
 "learnAboutOurCompany": "Learn About Our Company",
@@ -39,36 +39,36 @@
 
 "bitumenProducts": {
 "performanceGrade": "Nano Polymer Modified Bitumen (Nano PMB)",
-"penetrationGrade": "Penetration Grade Bitumen",
-"viscosityGrade": "Viscosity Grade Bitumen (VG)",
-"asphaltCement": "Asphalt Cement (AC)",
-"buildingConstruction": "Building & Construction Bitumen",
-"europeanNorms": "EN Grade Bitumen",
-"slowCuring": "Cutback Bitumen SC",
-"mediumCuring": "Cutback Bitumen MC",
-"rapidCuring": "Cutback Bitumen RC",
-"pmbTypeI": "Polymer Modified Bitumen (PMB) Type I",
-"pmbTypeII": "Polymer Modified Bitumen (PMB) Type II",
-"anionicEmulsion": "Anionic Bitumen Emulsion",
-"cationicEmulsion": "Cationic Bitumen Emulsion"
+"penetrationGrade": "Nano-Clay Polymer Binder",
+"viscosityGrade": "Project-Specific PMB Formulation",
+"asphaltCement": "Pilot Batch Nano PMB",
+"buildingConstruction": "High-Stability Road Binder",
+"europeanNorms": "Climate-Resilient Asphalt Binder",
+"slowCuring": "Rutting-Resistant Nano Binder",
+"mediumCuring": "Cracking-Resistant Nano Binder",
+"rapidCuring": "Cold-Weather Flexible Binder",
+"pmbTypeI": "Polymer-Nano Modified Binder Type I",
+"pmbTypeII": "Polymer-Nano Modified Binder Type II",
+"anionicEmulsion": "Future Nano Bitumen Emulsion",
+"cationicEmulsion": "Future Nano Asphalt Sealer"
 },
 
 "hydrocarbonProducts": {
-"cst180": "CST 180 Fuel Oil",
-"cst280": "CST 280 Fuel Oil",
-"typeI": "Type I Fuel Oil",
-"typeIIB": "Type II-B Fuel Oil",
-"type4610": "46-10 Fuel Oil",
-"type8525": "85/25 Fuel Oil",
-"type4622": "46-22 Fuel Oil",
-"typeMS1": "MS-1 Fuel Oil",
-"typeID": "Type I-D Fuel Oil",
-"typeCRS1": "CRS-1 Fuel Oil",
-"type7616": "76-16 Fuel Oil"
+"cst180": "Nano Bitumen Emulsion",
+"cst280": "Cold Mix Emulsion",
+"typeI": "Urban Resurfacing Emulsion",
+"typeIIB": "Pavement Preservation Emulsion",
+"type4610": "Maintenance Emulsion",
+"type8525": "Export-Ready Nano Emulsion",
+"type4622": "Quality-Tested Nano Emulsion",
+"typeMS1": "Pilot Nano Emulsion Batch",
+"typeID": "Technical Support Package",
+"typeCRS1": "Application Guidance",
+"type7616": "Future Emulsion Product Line"
 },
 
 "oilMulchProducts": {
-"bio": "Bio Oil Mulch",
-"mulch": "Oil Mulch"
+"bio": "Nano Asphalt Sealer",
+"mulch": "Waterproofing and Pavement Preservation Sealer"
 }
 }

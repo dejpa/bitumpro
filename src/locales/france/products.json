@@ -1,34 +1,34 @@
 {
 "heroTitle": "Nos Produits",
-"heroDescription": "Des solutions bitumineuses avancées et des produits pétroliers destinés aux infrastructures, aux opérations industrielles et aux projets de restauration des terres.",
+"heroDescription": "Des solutions de liants bitumineux nano-modifiés conçues pour des infrastructures durables, résilientes au climat et adaptées au marché canadien ainsi qu'aux futurs marchés d'exportation.",
 
 "requestQuote": "Demander un devis",
 "learnMoreAboutUs": "En savoir plus sur nous",
 
 "productCategories": "Catégories de Produits",
-"productCategoriesDescription": "Bitumpro propose un portefeuille diversifié de produits bitumineux avancés et de solutions pétrolières. Notre technologie phare de bitume polymère modifié aux nanoparticules (Nano PMB) est complétée par des grades de bitume conventionnels, des produits pétroliers industriels et des solutions de paillis d’huile destinés aux secteurs des infrastructures, de l’industrie et de la restauration des terres.",
+"productCategoriesDescription": "Le lancement de Bitumpro est centré sur le bitume polymère modifié aux nanoparticules (Nano PMB), un liant asphaltique de nouvelle génération combinant polymères avancés et additifs nano-ingénierés. Notre installation évolutive en Colombie-Britannique est également conçue pour soutenir de futures gammes de nano-émulsions bitumineuses et de scellants d'asphalte nano lorsque la demande du marché se développera.",
 
 "completeProductRange": "Portefeuille Complet de Produits",
-"completeProductRangeDescription": "Découvrez notre gamme complète de produits haute performance conçus pour répondre aux exigences des infrastructures modernes, des opérations industrielles et des projets environnementaux.",
+"completeProductRangeDescription": "Découvrez notre feuille de route produit axée sur la construction routière haute performance, la préservation des chaussées, les applications de mélange à froid, l'étanchéité et les infrastructures résilientes au climat.",
 
 "bitumen": "Bitume Polymère Modifié aux Nanoparticules",
-"bitumenDescription": "Notre technologie Nano PMB associe des polymères avancés et des additifs nano-ingénierés afin d’améliorer la durabilité des chaussées, la stabilité thermique, l’élasticité et la résistance aux cycles gel-dégel.",
+"bitumenDescription": "Notre Nano PMB associe polymères avancés et additifs nano-ingénierés afin d'améliorer la résistance à l'orniérage, la résistance à la fissuration, l'élasticité, la stabilité thermique, la résistance à l'oxydation et la durée de service des chaussées.",
 
-"hydrocarbon": "Produits Pétroliers Industriels",
-"hydrocarbonDescription": "Une gamme de produits pétroliers et de fiouls destinée aux opérations industrielles, aux applications énergétiques, aux procédés de fabrication et aux projets spécialisés d’infrastructure.",
+"hydrocarbon": "Nano-Émulsions Bitumineuses",
+"hydrocarbonDescription": "Produits d'émulsion prévus pour le resurfaçage urbain, la préservation des chaussées, les applications de mélange à froid et les programmes d'entretien des infrastructures.",
 
-"oilMulch": "Solutions de Paillis d’Huile",
-"oilMulchDescription": "Des technologies éprouvées de paillis d’huile conçues pour la stabilisation des sols, le contrôle de l’érosion, la rétention de l’humidité, la suppression de la poussière et la restauration des terres.",
+"oilMulch": "Scellants d'Asphalte Nano",
+"oilMulchDescription": "Scellants d'asphalte nano-améliorés prévus pour l'étanchéité, la protection de surface, la préservation des chaussées et la réduction des cycles de maintenance à long terme.",
 
 "qualityAssurance": "Assurance Qualité",
-"qualityAssuranceDescription": "Bitumpro s’engage à fournir des produits fiables et performants répondant aux normes les plus exigeantes de l’industrie. Notre expertise technique, nos processus de contrôle qualité et notre démarche d’amélioration continue garantissent des performances constantes sur l’ensemble de nos gammes de produits.",
+"qualityAssuranceDescription": "Bitumpro soutiendra l'adoption de ses produits par une production contrôlée, des essais en laboratoire QC, une documentation technique, des lots pilotes et un alignement avec les exigences ASTM, CSA et les normes provinciales de transport.",
 
-"isoCertified": "Fabrication Avancée et Contrôle Qualité",
-"laboratoryServices": "Recherche, Développement et Analyses en Laboratoire",
-"internationalDistribution": "Production Canadienne et Réseau d’Approvisionnement Mondial",
+"isoCertified": "Installation de 2 000 m² en C.-B. avec capacité évolutive de 6 000 tonnes par an",
+"laboratoryServices": "Laboratoire QC, R&D, lots pilotes et soutien technique terrain",
+"internationalDistribution": "Lancement au Canada avec feuille de route export vers les États-Unis et l'Amérique du Sud",
 
 "readyToGetStarted": "Prêt à Commencer ?",
-"readyToGetStartedDescription": "Notre équipe est à votre disposition pour vous fournir des conseils techniques, des recommandations de produits, des spécifications détaillées et un accompagnement commercial pour vos projets d’infrastructure, industriels et de restauration des terres.",
+"readyToGetStartedDescription": "Notre équipe peut fournir des conseils techniques, des spécifications produit, un soutien aux projets pilotes, des informations de prix et une consultation commerciale pour les municipalités, les entrepreneurs routiers, les centrales d'asphalte et les développeurs d'infrastructures.",
 
 "requestProductInformation": "Demander des Informations Produit",
 "learnAboutOurCompany": "Découvrir Notre Entreprise",
@@ -39,36 +39,36 @@
 
 "bitumenProducts": {
 "performanceGrade": "Bitume Polymère Modifié aux Nanoparticules (Nano PMB)",
-"penetrationGrade": "Bitume de Grade de Pénétration",
-"viscosityGrade": "Bitume de Grade de Viscosité (VG)",
-"asphaltCement": "Ciment d’Asphalte (AC)",
-"buildingConstruction": "Bitume pour le Bâtiment et la Construction",
-"europeanNorms": "Bitume Conforme aux Normes EN",
-"slowCuring": "Bitume Fluxé SC",
-"mediumCuring": "Bitume Fluxé MC",
-"rapidCuring": "Bitume Fluxé RC",
-"pmbTypeI": "Bitume Modifié aux Polymères (PMB) Type I",
-"pmbTypeII": "Bitume Modifié aux Polymères (PMB) Type II",
-"anionicEmulsion": "Émulsion Bitumineuse Anionique",
-"cationicEmulsion": "Émulsion Bitumineuse Cationique"
+"penetrationGrade": "Liant polymère à nano-argile",
+"viscosityGrade": "Formulation PMB adaptée au projet",
+"asphaltCement": "Lot pilote Nano PMB",
+"buildingConstruction": "Liant routier haute stabilité",
+"europeanNorms": "Liant asphaltique résilient au climat",
+"slowCuring": "Liant nano résistant à l'orniérage",
+"mediumCuring": "Liant nano résistant à la fissuration",
+"rapidCuring": "Liant flexible par temps froid",
+"pmbTypeI": "Liant polymère-nano modifié Type I",
+"pmbTypeII": "Liant polymère-nano modifié Type II",
+"anionicEmulsion": "Future nano-émulsion bitumineuse",
+"cationicEmulsion": "Futur scellant d'asphalte nano"
 },
 
 "hydrocarbonProducts": {
-"cst180": "Fioul CST 180",
-"cst280": "Fioul CST 280",
-"typeI": "Fioul Type I",
-"typeIIB": "Fioul Type II-B",
-"type4610": "Fioul 46-10",
-"type8525": "Fioul 85/25",
-"type4622": "Fioul 46-22",
-"typeMS1": "Fioul MS-1",
-"typeID": "Fioul Type I-D",
-"typeCRS1": "Fioul CRS-1",
-"type7616": "Fioul 76-16"
+"cst180": "Nano-émulsion bitumineuse",
+"cst280": "Émulsion pour mélange à froid",
+"typeI": "Émulsion pour resurfaçage urbain",
+"typeIIB": "Émulsion de préservation des chaussées",
+"type4610": "Émulsion de maintenance",
+"type8525": "Nano-émulsion prête à l'export",
+"type4622": "Nano-émulsion testée en qualité",
+"typeMS1": "Lot pilote de nano-émulsion",
+"typeID": "Ensemble de soutien technique",
+"typeCRS1": "Conseils d'application",
+"type7616": "Future gamme d'émulsions"
 },
 
 "oilMulchProducts": {
-"bio": "Bio Paillis d’Huile",
-"mulch": "Paillis d’Huile"
+"bio": "Scellant d'asphalte nano",
+"mulch": "Scellant d'étanchéité et de préservation des chaussées"
 }
 }

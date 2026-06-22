@@ -16,61 +16,38 @@ export default function Products() {
   const productCategories = [
     {
       id: "bitumen",
-      title: "Bitumen",
-      titleFr: "Bitume",
+      title: t("products.bitumen"),
       icon: FaRoad,
-      description: "Essential for road construction and maintenance, providing optimal binding agent for durable and flexible asphalt mixtures.",
-      descriptionFr: "Essentiel pour la construction et l'entretien des routes, fournissant un agent liant optimal pour des mélanges d'asphalte durables et flexibles.",
+      description: t("products.bitumenDescription"),
       color: "primary",
       products: [
-        { name: "Performance Grade (PG)", code: "PG" },
-        { name: "Penetration Grade", code: "PEN" },
-        { name: "VG (Viscosity Grade)", code: "VG" },
-        { name: "AC (Asphalt Cement)", code: "AC" },
-        { name: "Building Construction Bitumen", code: "BCB" },
-        { name: "EN (European Norms)", code: "EN" },
-        { name: "SC (Slow Curing)", code: "SC" },
-        { name: "MC (Medium Curing)", code: "MC" },
-        { name: "RC (Rapid Curing)", code: "RC" },
-        { name: "PMB Type I (Polymer Modified)", code: "PMB-I" },
-        { name: "PMB Type II (Polymer Modified)", code: "PMB-II" },
-        { name: "Anionic Emulsion Bitumen", code: "AE" },
-        { name: "Cationic Emulsion Bitumen", code: "CE" }
+        { name: "Nano Polymer Modified Bitumen", nameFr: "Bitume polymère modifié aux nanoparticules", code: "NANO-PMB" },
+        { name: "Nano-Clay Polymer Binder", nameFr: "Liant polymère à nano-argile", code: "NCPB" },
+        { name: "Project-Specific PMB Formulation", nameFr: "Formulation PMB adaptée au projet", code: "PMB-CUSTOM" }
       ]
     },
     {
       id: "hydrocarbon",
-      title: "HydroCarbon",
-      titleFr: "Hydrocarbure",
+      title: t("products.hydrocarbon"),
       icon: FaOilCan,
-      description: "High-quality hydrocarbon products including fuel oils for various industrial processes and heating applications.",
-      descriptionFr: "Produits hydrocarbures de haute qualité, y compris les fiouls pour divers processus industriels et applications de chauffage.",
+      description: t("products.hydrocarbonDescription"),
       color: "accent",
       products: [
-        { name: "CST 180 - Fuel Oil", code: "CST-180" },
-        { name: "CST 280 - Fuel Oil", code: "CST-280" },
-        { name: "Type I Fuel Oil", code: "TYPE-I" },
-        { name: "II-B Fuel Oil", code: "II-B" },
-        { name: "46-10 Fuel Oil", code: "46-10" },
-        { name: "85/25 Fuel Oil", code: "85/25" },
-        { name: "46-22 Fuel Oil", code: "46-22" },
-        { name: "MS-1 Fuel Oil", code: "MS-1" },
-        { name: "I-D Fuel Oil", code: "I-D" },
-        { name: "CRS-1 Fuel Oil", code: "CRS-1" },
-        { name: "76-16 Fuel Oil", code: "76-16" }
+        { name: "Nano Bitumen Emulsion", nameFr: "Nano-émulsion bitumineuse", code: "NBE" },
+        { name: "Cold Mix Emulsion", nameFr: "Émulsion pour mélange à froid", code: "CME" },
+        { name: "Urban Resurfacing Emulsion", nameFr: "Émulsion pour resurfaçage urbain", code: "URE" }
       ]
     },
     {
       id: "oil-mulch",
-      title: "Oil Mulch",
-      titleFr: "Paillis d'huile",
+      title: t("products.oilMulch"),
       icon: FaLeaf,
-      description: "Environmentally friendly oil mulch used in agriculture to stabilize soil, maintain moisture, and improve soil quality while minimizing erosion.",
-      descriptionFr: "Paillis d'huile écologique utilisé en agriculture pour stabiliser le sol, maintenir l'humidité et améliorer la qualité du sol tout en minimisant l'érosion.",
+      description: t("products.oilMulchDescription"),
       color: "primary",
       products: [
-        { name: "Bio Oil Mulch", code: "BIO" },
-        { name: "Oil Mulch", code: "MUL" },
+        { name: "Nano Asphalt Sealer", nameFr: "Scellant d'asphalte nano", code: "NAS" },
+        { name: "Waterproofing Sealer", nameFr: "Scellant d'étanchéité", code: "WPS" },
+        { name: "Pavement Preservation Sealer", nameFr: "Scellant de préservation des chaussées", code: "PPS" },
       ]
     }
   ];
@@ -130,8 +107,7 @@ export default function Products() {
               {t("products.productCategories")}
             </h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Bitumpro offers a diverse range of high-quality products to meet various industrial needs, 
-              focusing on three main categories: bitumen, hydrocarbon, and oil mulch.
+              {t("products.productCategoriesDescription")}
             </p>
           </div>
           
@@ -144,10 +120,10 @@ export default function Products() {
                     <IconComponent className={`h-10 w-10 ${category.color === 'primary' ? 'text-primary-400' : 'text-accent-400'}`} />
                   </div>
                   <h3 className="text-2xl font-bold gradient-text mb-4">
-                    {currentLocale === 'fr' ? category.titleFr : category.title}
+                    {category.title}
                   </h3>
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    {currentLocale === 'fr' ? category.descriptionFr : category.description}
+                    {category.description}
                   </p>
                   <div className="text-sm text-primary-400 font-semibold">
                     {category.products.length} {t("products.productTypes")}
@@ -181,11 +157,11 @@ export default function Products() {
                       <IconComponent className={`h-8 w-8 ${category.color === 'primary' ? 'text-primary-400' : 'text-accent-400'}`} />
                     </div>
                     <h3 className="text-3xl lg:text-4xl font-bold gradient-text">
-                      {currentLocale === 'fr' ? category.titleFr : category.title}
+                      {category.title}
                     </h3>
                   </div>
                   <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                    {currentLocale === 'fr' ? category.descriptionFr : category.description}
+                    {category.description}
                   </p>
                 </div>
 
@@ -195,7 +171,7 @@ export default function Products() {
                       <div className="flex items-start justify-between mb-4">
                         <div className="flex-1">
                           <h4 className="text-lg font-bold text-white mb-2 group-hover:text-primary-400 transition-colors duration-300">
-                            {product.name}
+                            {currentLocale === 'fr' ? product.nameFr : product.name}
                           </h4>
                           <p className="text-sm text-gray-400 font-mono bg-gray-800/50 px-3 py-1 rounded-full inline-block">
                             {product.code}
@@ -233,8 +209,7 @@ export default function Products() {
                   {t("products.qualityAssurance")}
                 </h2>
                 <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                  Bitumpro's commitment to providing high-performance products ensures that each batch meets the exacting quality standards 
-                  expected by customers, making us a trusted partner in the industry.
+                  {t("products.qualityAssuranceDescription")}
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
